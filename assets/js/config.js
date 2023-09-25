@@ -217,7 +217,7 @@ let headerLogoText = "RTINGS",
     headerLinks = [
         {
             name: "Headphones",
-            url: "https://danque62.github.io/GraphTings/headphones"
+            url: "headphones.html"
         },
         // {
         //     name: "Ranking",
