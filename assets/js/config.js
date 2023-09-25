@@ -15,7 +15,7 @@ const init_phones = ["Δ Target","Elysian Annihilator (2023)"],// Optional. Whic
       share_url = true,                             // If true, enables shareable URLs
       watermark_text = "",              // Optional. Watermark appears behind graphs
       watermark_image_url = "",   // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "RTingGraph",                  // Optional. Appended to the page title if share URLs are enabled
+      page_title = "GraphTings",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -212,7 +212,7 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "RTINGS",
+let headerLogoText = "GRAPHTINGS",
     headerLogoImgUrl = "assets/images/haruto.svg",
     headerLinks = [
         {

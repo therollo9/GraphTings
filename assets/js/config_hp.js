@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["IEF Neutral Target"],                             // Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["HMSii.3 Diffuse Field Target"],                             // Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data_hp/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -15,7 +15,7 @@ const init_phones = ["IEF Neutral Target"],                             // Optio
       share_url = true,                             // If true, enables shareable URLs
       watermark_text = "",              // Optional. Watermark appears behind graphs
       watermark_image_url = "",   // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "RTingGraph",                  // Optional. Appended to the page title if share URLs are enabled
+      page_title = "GraphTings",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for headphones.",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -211,7 +211,7 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "RTINGS",
+let headerLogoText = "GRAPHTINGS",
     headerLogoImgUrl = "assets/images/haruto.svg",
     headerLinks = [
     {
