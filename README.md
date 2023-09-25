@@ -1,3 +1,8 @@
+# GraphTings
+This is an unofficial alternative to the [RTings Graph Tool](https://www.rtings.com/headphones/1-5/graph) based on a fork of [HarutoHiroki's Public Graph Tool](https://github.com/HarutoHiroki/PublicGraphTool).
+It has custom DF tilt functionality, and an Equalizer function.
+All frequency response graphs are taken from the [AutoEQ GitHub Repository](https://github.com/jaakkopasanen/AutoEq/)
+
 # Changes
 - Added Equalizer (cred to Rohsa)
 - Added Uploads
