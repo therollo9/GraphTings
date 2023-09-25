@@ -234,6 +234,11 @@
         "phones": [
             {
                 "index": 15,
+                "name": "Beoplay E8",
+                "file": "Bang & Olufsen Beoplay E8"
+            },
+            {
+                "index": 15,
                 "name": "Beoplay E8 2.0",
                 "file": "Bang & Olufsen Beoplay E8 2.0"
             },
@@ -241,16 +246,6 @@
                 "index": 15,
                 "name": "Beoplay E8 3.0",
                 "file": "Bang & Olufsen Beoplay E8 3.0"
-            },
-            {
-                "index": 15,
-                "name": "Beoplay E8",
-                "file": "Bang & Olufsen Beoplay E8"
-            },
-            {
-                "index": 15,
-                "name": "E8 3.0",
-                "file": "Bang & Olufsen E8 3.0"
             }
         ]
     },
@@ -259,7 +254,7 @@
         "phones": [
             {
                 "index": 16,
-                "name": "X",
+                "name": "BeatsX",
                 "file": "Beats BeatsX"
             },
             {
@@ -311,11 +306,6 @@
                 "index": 16,
                 "name": "Studio Buds",
                 "file": "Beats Studio Buds"
-            },
-            {
-                "index": 16,
-                "name": "X",
-                "file": "Beats X"
             },
             {
                 "index": 16,
@@ -405,12 +395,8 @@
             {
                 "index": 23,
                 "name": "PI7",
-                "file": "Bowers & Wilkins PI7"
-            },
-            {
-                "index": 23,
-                "name": "Pi7 S2",
-                "file": "Bowers & Wilkins Pi7 S2"
+                "file": ["Bowers & Wilkins PI7", "Bowers & Wilkins Pi7 S2"],
+                "suffix": ["S1", "S2"]
             }
         ]
     },
@@ -491,11 +477,6 @@
                 "index": 39,
                 "name": "Air Pro 2 2021",
                 "file": "EarFun Air Pro 2 2021"
-            },
-            {
-                "index": 39,
-                "name": "Air Pro 2",
-                "file": "EarFun Air Pro 2"
             },
             {
                 "index": 39,
@@ -1580,13 +1561,8 @@
             },
             {
                 "index": 100,
-                "name": "TrueFree",
+                "name": "TrueFree/True",
                 "file": "SoundPeats TrueFree"
-            },
-            {
-                "index": 100,
-                "name": "TrueFree True",
-                "file": "SoundPeats TrueFree True"
             }
         ]
     },
