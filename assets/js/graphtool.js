@@ -239,7 +239,7 @@ let x = d3.scaleLog()
     .domain([20,20000])
     .range([pad.l,pad.l+W]);
 
-let yD = [29.5,85], // Decibels
+let yD = [65, 115], // Decibels
     yR = [pad.t+H,pad.t+10];
 let y = d3.scaleLinear().domain(yD).range(yR);
 
@@ -370,9 +370,9 @@ rangeSel.on("click", function (_,i) {
 
 // y-axis scaler
 let dB = {
-    y: y(60),
+    y: y(90),
     h: 15,
-    H: y(60)-y(70),
+    H: y(90)-y(100),
     min: pad.t,
     max: pad.t+H,
     tr: _ => "translate("+(pad.l-9)+","+dB.y+")"
@@ -431,7 +431,7 @@ dB.circ = dB.trans.selectAll().data([-1,1]).join("circle")
         dB.mid.attrs({y:dB.y-dB.h,height:2*dB.h});
         dB.updatey();
     }));
-let yCenter = 60;
+let yCenter = 90;
 dB.updatey = function (dom) {
     let d = l => l[1]-l[0];
     y.domain(yR.map(y=>yCenter+(y-dB.y)*(15/dB.h)*d(yD)/d(yR)));
@@ -1009,7 +1009,7 @@ function redrawLine(p) {
 }
 function updateYCenter() {
     let c = yCenter;
-    yCenter = baseline.p ? 0 : norm_sel ? 60 : norm_phon;
+    yCenter = baseline.p ? 0 : norm_sel ? 90 : norm_phon;
     y.domain(y.domain().map(d=>d+(yCenter-c)));
     yAxisObj.call(fmtY);
 }
@@ -1423,7 +1423,7 @@ function normalizePhone(p) {
     if (norm_sel) { // fr
         let i = fr_to_ind(norm_fr);
         let avg = l => 20*Math.log10(d3.mean(l, d=>Math.pow(10,d/20)));
-        p.norm = 60 - avg(validChannels(p).map(l=>l[i][1]));
+        p.norm = 90 - avg(validChannels(p).map(l=>l[i][1]));
     } else { // phon
         p.norm = find_offset(getAvg(p), norm_phon);
     }
@@ -1780,8 +1780,8 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
         let brand = window.brandTarget;
         let phoneObjs = brand.phoneObjs;
         let phoneObj = { isTarget:true, brand:brand, phone:"Custom Tilt",
-            fullName:"Custom Delta (∆) Tilt (Bass: " + boost + "dB, Tilt: " + tilt + "dB/Oct)",
-            dispName:"Custom Delta (∆) Tilt",
+            fullName:"Custom Delta (Δ) Tilt (Bass: " + boost + "dB, Tilt: " + tilt + "dB/Oct)",
+            dispName:"Custom Delta (Δ) Tilt",
             fileName:"Custom Tilt"};
         phoneObj.rawChannels = [tiltOct];
         phoneObj.id = -69;
@@ -2784,7 +2784,7 @@ function addHeader() {
     headerLogoLink.append(headerLogoSpan);
     headerLogoImg.setAttribute("src", headerLogoImgUrl);
     headerLogoImg.setAttribute('style', "width:95%; margin-left: 33%; fill: #ffffff;");
-    headerLogoLink.append(headerLogoImg);
+    // headerLogoLink.append(headerLogoImg);
     
     altHeaderElem.append(headerButton);
     headerButton.setAttribute('style', "background-color: #ffffff");

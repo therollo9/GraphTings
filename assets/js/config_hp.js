@@ -3,8 +3,8 @@ const init_phones = ["IEF Neutral Target"],                             // Optio
       DIR = "data_hp/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
-      default_norm_db = 60,                         // Sets default dB normalization point
-      default_norm_hz = 1000,                       // Sets default Hz normalization point (500Hz is recommended by IEC)
+      default_norm_db = 90,                         // Sets default dB normalization point
+      default_norm_hz = 630,                       // Sets default Hz normalization point (500Hz is recommended by IEC)
       max_channel_imbalance = 5,                    // Channel imbalance threshold to show ! in the channel selector
       alt_layout = true,                            // Toggle between classic and alt layouts
       alt_sticky_graph = true,                      // If active graphs overflows the viewport, does the graph scroll with the page or stick to the viewport?
@@ -13,9 +13,9 @@ const init_phones = ["IEF Neutral Target"],                             // Optio
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg",   // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "HarutoHiroki",                  // Optional. Appended to the page title if share URLs are enabled
+      watermark_text = "",              // Optional. Watermark appears behind graphs
+      watermark_image_url = "",   // Optional. If image file is in same directory as config, can be just the filename
+      page_title = "RTingGraph",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for headphones.",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -36,18 +36,18 @@ const init_phones = ["IEF Neutral Target"],                             // Optio
       extraToneGeneratorEnabled = true,             // Enable tone generator function
       num_samples = 5,                              // Number of samples to average for smoothing
       scale_smoothing = 0.2,                        // Smoothing factor for scale transitions
-      PHONE_BOOK = "phone_book_hp.json",            // Phone book location
-      default_bass_shelf = 8,                       // Default Custom DF bass shelf value
-      default_tilt = -0.8,                          // Default Custom DF tilt value
-      default_DF_name = "Diffuse Field",            // Default RAW DF name
+      PHONE_BOOK = "rtings_phone_book_hp.json",            // Phone book location
+      default_bass_shelf = 0,                       // Default Custom DF bass shelf value
+      default_tilt = -1,                          // Default Custom DF tilt value
+      default_DF_name = "HMSii.3 Diffuse Field",            // Default RAW DF name
       dfBaseline = true;                            // If true, DF is used as baseline when custom df tilt is on
 
 
 // Specify which targets to display
 const targets = [
-    { type:"Neutral",    files:["KEMAR DF", "IEF Neutral"] },
-    { type:"Community",   files:["Listener Tilt 711"] },
-    { type:"Preference", files:["Harman Combined", "Harman 2018 OE", "Harman 2015 OE", "Harman 2013 OE"] }
+    { type:"Neutral",    files:["HMSii.3 Diffuse Field"] },
+    // { type:"Community",   files:["Listener Tilt 711"] },
+    { type:"Preference", files:["Rtings", "Innerfidelity ID"] }
 ];
 
 
@@ -76,11 +76,11 @@ function watermark(svg) {
     }
 
     // Extra flair
-    svg.append("g")
-        .attr("opacity",0.2)
-        .append("text")
-        .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
-        .text("graphtool.harutohiroki.com");
+    // svg.append("g")
+    //     .attr("opacity",0.2)
+    //     .append("text")
+    //     .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
+    //     .text("graphtool.harutohiroki.com");
 }
 
 
@@ -211,25 +211,25 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "HarutoHiroki",
+let headerLogoText = "RTINGS",
     headerLogoImgUrl = "assets/images/haruto.svg",
     headerLinks = [
     {
-        name: "Home",
-        url: "https://harutohiroki.com"
+        name: "IEMs",
+        url: ".https://danque62.github.io/GraphTings/"
     },
-    {
-        name: "Ranking",
-        url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
-    },
-    {
-        name: "Discord",
-        url: "https://discord.harutohiroki.com"
-    },
-    {
-        name: "Donate",
-        url: "https://www.paypal.me/harutohirokiUS"
-    },
+    // {
+    //     name: "Ranking",
+    //     url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
+    // },
+    // {
+    //     name: "Discord",
+    //     url: "https://discord.harutohiroki.com"
+    // },
+    // {
+    //     name: "Donate",
+    //     url: "https://www.paypal.me/harutohirokiUS"
+    // },
 //  {
 //      name: "GitHub",
 //      url: "https://github.com/HarutoHiroki"
