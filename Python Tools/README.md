@@ -38,6 +38,7 @@ For the second question, lets analyze one of the brands inside the Phone Book:
     }
 ```
 The index parameter will be explained later
+
 In this example, each brand has a name and a list of phones (models), and each model has its name and the file that represents it. It can be a singular file or a list of files. Knowing this, we can dissect the format to have this pattern:
 ```py
 brand_dictionary = {
