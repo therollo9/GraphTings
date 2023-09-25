@@ -4,7 +4,7 @@ These 2 Python files made my life easier considering the fact that RTings has me
 ## The Renamer (renamer.py)
 Like what the name suggests, it renames the CSVs into TXT files, with appropriate suffixes depending on whether or not it's an IEM database or a headphone database. IEMs end with L while headphones end with L1.
 ## Phone Book Generator (make_phone_book.py)
-This Python file, while not perfect, is a lifesaver, and it took me 2 days of learning Python (because it's not my main language) and figuring out the flow. Before I explain how the generator works, I will impose some questions:
+This Python file, while not perfect, is a lifesaver, and it took me 2 days of learning Python (because it's not my main language) and figuring out the flow. Before I explain how the generator works, I will lay out some questions I asked myself throughout the weekend:
 - How to generate a JSON file using Python?
 - What is the structure of the Phone Book JSON file?
 - Knowing the above, how to represent datatypes in Python?
