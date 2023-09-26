@@ -4,7 +4,7 @@ import os
 def main():
     path = "data_hp/"
     new_last = " L.txt"
-    new_last_hp = " L.txt"
+    new_last_hp = " L1.txt"
     # print("Hello World")
     for file in os.listdir(path):
         file_name, file_extension = os.path.splitext(file)
