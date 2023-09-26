@@ -46,7 +46,7 @@ const init_phones = ["HMSii.3 Diffuse Field Target"],                           
 // Specify which targets to display
 const targets = [
     { type:"Neutral",    files:["HMSii.3 Diffuse Field"] },
-    // { type:"Community",   files:["Listener Tilt 711"] },
+    { type:"Harman", files:["Harman 2013", "Harman 2018"] },
     { type:"Preference", files:["Rtings", "Innerfidelity ID"] }
 ];
 
@@ -212,7 +212,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "GRAPHTINGS",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+    headerLogoImgUrl = "assets/images/watermark.svg",
     headerLinks = [
     {
         name: "IEMs",

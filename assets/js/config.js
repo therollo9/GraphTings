@@ -213,7 +213,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "GRAPHTINGS",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+    headerLogoImgUrl = "assets/images/watermark.svg",
     headerLinks = [
         {
             name: "Headphones",
