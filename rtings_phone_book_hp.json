@@ -64,8 +64,8 @@
         "phones": [
             {
                 "index": 3,
-                "name": "Gaming A10 Gen 2",
-                "file": "ASTRO Gaming A10 Gen 2"
+                "name": "Gaming A10 (Gen 2)",
+                "file": "ASTRO Gaming A10 (Gen 2)"
             },
             {
                 "index": 3,
@@ -74,8 +74,8 @@
             },
             {
                 "index": 3,
-                "name": "Gaming A20 Gen 2",
-                "file": "ASTRO Gaming A20 Gen 2"
+                "name": "Gaming A20 (Gen 2)",
+                "file": "ASTRO Gaming A20 (Gen 2)"
             },
             {
                 "index": 3,
@@ -99,13 +99,13 @@
             },
             {
                 "index": 3,
-                "name": "Gaming A50 Gen 3 2017",
-                "file": "ASTRO Gaming A50 Gen 3 2017"
+                "name": "Gaming A50 (Gen 3 2017)",
+                "file": "ASTRO Gaming A50 (Gen 3 2017)"
             },
             {
                 "index": 3,
-                "name": "Gaming A50 Gen 4 2019",
-                "file": "ASTRO Gaming A50 Gen 4 2019"
+                "name": "Gaming A50 (Gen 4 2019)",
+                "file": "ASTRO Gaming A50 (Gen 4 2019)"
             }
         ]
     },
@@ -122,6 +122,10 @@
     {
         "name": "Anker",
         "phones": [
+            {
+                "name": "Soundcore Space One",
+                "file": "Anker Soundcore Space One"
+            },
             {
                 "index": 9,
                 "name": "SoundCore Space NC",
@@ -194,8 +198,8 @@
         "phones": [
             {
                 "index": 12,
-                "name": "ATH-AD700X",
-                "file": "Audio-Technica ATH-AD700X"
+                "name": "ATH-AD700X (2013)",
+                "file": "Audio-Technica ATH-AD700X (2013)"
             },
             {
                 "index": 12,
@@ -299,13 +303,13 @@
         "phones": [
             {
                 "index": 15,
-                "name": "Beoplay H6",
-                "file": "Bang & Olufsen Beoplay H6"
+                "name": "Beoplay H6 (2nd Gen)",
+                "file": "Bang & Olufsen Beoplay H6 (2nd Gen)"
             },
             {
                 "index": 15,
-                "name": "Beoplay H9",
-                "file": "Bang & Olufsen Beoplay H9"
+                "name": "Beoplay H9 (Gen 1)",
+                "file": "Bang & Olufsen Beoplay H9 (Gen 1)"
             },
             {
                 "index": 15,
@@ -395,12 +399,12 @@
             {
                 "index": 18,
                 "name": "DT 770 250 Ohm",
-                "file": "Beyerdynamic DT 770 250 Ohm"
+                "file": "Beyerdynamic DT 770 Pro"
             },
             {
                 "index": 18,
                 "name": "DT 880 32 Ohm",
-                "file": "Beyerdynamic DT 880 32 Ohm"
+                "file": "Beyerdynamic DT 880"
             },
             {
                 "index": 18,
@@ -409,13 +413,22 @@
             },
             {
                 "index": 18,
-                "name": "DT 990 250 Ohm",
-                "file": "Beyerdynamic DT 990 250 Ohm"
+                "name": "DT 990 Pro 250 Ohm",
+                "file": "Beyerdynamic DT 990 Pro"
             },
             {
                 "index": 18,
-                "name": "T1 2nd Generation",
-                "file": "Beyerdynamic T1 2nd Generation"
+                "name": "T1 (2nd Gen)",
+                "file": "Beyerdynamic T1 (2nd Gen)"
+            }
+        ]
+    },
+    {
+        "name": "BlueParrott",
+        "phones": [
+            {
+                "name": "B450-XT",
+                "file": "BlueParrott B450-XT"
             }
         ]
     },
@@ -425,7 +438,7 @@
             {
                 "index": 20,
                 "name": "T2S Turbine",
-                "file": "Bluedio T2S Turbine"
+                "file": "Bluedio T2S"
             },
             {
                 "index": 20,
@@ -435,7 +448,7 @@
             {
                 "index": 20,
                 "name": "T4",
-                "file": "Bluedio T4"
+                "file": "Bluedio T4 Turbine"
             },
             {
                 "index": 20,
@@ -481,6 +494,10 @@
                 "index": 22,
                 "name": "QuietComfort 45",
                 "file": "Bose QuietComfort 45"
+            },
+            {
+                "name": "QuietComfort Ultra Headphones",
+                "file": "Bose QuietComfort Ultra Headphones"
             },
             {
                 "index": 22,
@@ -629,6 +646,11 @@
             },
             {
                 "index": 28,
+                "name": "HS80 MAX WIRELESS",
+                "file": "Corsair HS80 MAX WIRELESS"
+            },
+            {
+                "index": 28,
                 "name": "HS80 RGB WIRELESS",
                 "file": "Corsair HS80 RGB WIRELESS"
             },
@@ -729,8 +751,8 @@
         "phones": [
             {
                 "index": 32,
-                "name": "AH-GC20",
-                "file": "Denon AH-GC20"
+                "name": "AHGC20 Globe Cruiser",
+                "file": "Denon AHGC20 Globe Cruiser"
             }
         ]
     },
@@ -740,7 +762,7 @@
             {
                 "index": 33,
                 "name": "DH3 Wireless",
-                "file": "Diskin Wireless Bluetooth"
+                "file": "Diskin DH3"
             }
         ]
     },
@@ -880,7 +902,7 @@
             {
                 "index": 46,
                 "name": "Arya Stealth",
-                "file": "HIFIMAN Arya Stealth"
+                "file": "HIFIMAN Arya Stealth Magnet Version"
             },
             {
                 "index": 46,
@@ -904,13 +926,13 @@
             },
             {
                 "index": 46,
-                "name": "Sundara 2018",
-                "file": "HIFIMAN Sundara 2018"
+                "name": "Sundara",
+                "file": "HIFIMAN Sundara (pre-2020 earpads)"
             },
             {
                 "index": 46,
                 "name": "Sundara 2020",
-                "file": "HIFIMAN Sundara 2020"
+                "file": "HIFIMAN Sundara (post-2020 earpads)"
             }
         ]
     },
@@ -971,6 +993,11 @@
                 "index": 48,
                 "name": "Cloud III",
                 "file": "HyperX Cloud III"
+            },
+            {
+                "index": 48,
+                "name": "Cloud III Wireless",
+                "file": "HyperX Cloud III Wireless"
             },
             {
                 "index": 48,
@@ -1039,8 +1066,8 @@
             },
             {
                 "index": 50,
-                "name": "E50BT",
-                "file": "JBL E50BT"
+                "name": "Synchros E50BT",
+                "file": "JBL Synchros E50BT"
             },
             {
                 "index": 50,
@@ -1179,8 +1206,8 @@
             },
             {
                 "index": 56,
-                "name": "Porta Pro",
-                "file": "Koss Porta Pro"
+                "name": "Porta Pro KTC",
+                "file": "Koss Porta Pro KTC"
             },
             {
                 "index": 56,
@@ -1199,8 +1226,8 @@
             },
             {
                 "index": 56,
-                "name": "UR 20",
-                "file": "Koss UR 20"
+                "name": "UR20",
+                "file": "Koss UR20"
             }
         ]
     },
@@ -1215,7 +1242,12 @@
             {
                 "index": 57,
                 "name": "G Pro",
-                "file": "Logitech G Pro"
+                "file": "Logitech G Pro Gaming Headset"
+            },
+            {
+                "index": 57,
+                "name": "G Pro X",
+                "file": "Logitech G Pro X Gaming Headset"
             },
             {
                 "index": 57,
@@ -1359,8 +1391,8 @@
         "phones": [
             {
                 "index": 64,
-                "name": "110010 Noise Cancelling",
-                "file": "Monoprice Noise Cancelling"
+                "name": "110010/Noise Cancelling",
+                "file": "Monoprice 110010"
             }
         ]
     },
@@ -1389,8 +1421,8 @@
         "phones": [
             {
                 "index": 68,
-                "name": "Bluetooth Over-Ear",
-                "file": "Mpow Bluetooth Over-Ear"
+                "name": "059 Bluetooth Over-Ear",
+                "file": "Mpow 059"
             },
             {
                 "index": 68,
@@ -1416,6 +1448,10 @@
                 "index": 68,
                 "name": "H5",
                 "file": "Mpow H5"
+            },
+            {
+                "name": "Pro Trucker",
+                "file": "Mpow Pro Trucker"
             }
         ]
     },
@@ -1629,8 +1665,8 @@
             },
             {
                 "index": 86,
-                "name": "Barracuda X 2021",
-                "file": "Razer Barracuda X 2021"
+                "name": "Barracuda X (2021)",
+                "file": "Razer Barracuda X (2021)"
             },
             {
                 "index": 86,
@@ -1651,6 +1687,10 @@
                 "index": 86,
                 "name": "BlackShark V2 X",
                 "file": "Razer BlackShark V2 X"
+            },
+            {
+                "name": "BlackShark V2 HyperSpeed",
+                "file": "Razer BlackShark V2 HyperSpeed"
             },
             {
                 "index": 86,
@@ -1769,11 +1809,6 @@
         "phones": [
             {
                 "index": 93,
-                "name": "Gear IconX",
-                "file": "Samsung Gear IconX"
-            },
-            {
-                "index": 93,
                 "name": "Level On Wireless",
                 "file": "Samsung Level On Wireless"
             },
@@ -1781,16 +1816,6 @@
                 "index": 93,
                 "name": "Level Over Wireless",
                 "file": "Samsung Level Over Wireless"
-            },
-            {
-                "index": 93,
-                "name": "Level U Pro",
-                "file": "Samsung Level U Pro"
-            },
-            {
-                "index": 93,
-                "name": "U Flex",
-                "file": "Samsung U Flex"
             }
         ]
     },
@@ -2013,9 +2038,13 @@
                 "file": "Shure AONIC 50"
             },
             {
+                "name": "AONIC 50 Gen 2",
+                "file": "Shure AONIC 50 Gen 2"
+            },
+            {
                 "index": 96,
-                "name": "SRH240A",
-                "file": "Shure SRH240A"
+                "name": "SRH240",
+                "file": "Shure SRH240"
             },
             {
                 "index": 96,
@@ -2364,8 +2393,8 @@
             },
             {
                 "index": 104,
-                "name": "Arctis Nova Pro for Xbox",
-                "file": "SteelSeries Arctis Nova Pro for Xbox"
+                "name": "Arctis Nova Pro Wireless",
+                "file": "SteelSeries Arctis Nova Pro Wireless"
             },
             {
                 "index": 104,
@@ -2434,8 +2463,8 @@
             },
             {
                 "index": 110,
-                "name": "TT-BH060",
-                "file": "TaoTronics TT-BH060"
+                "name": "TT-BH041 Bluetooth Headset",
+                "file": "TaoTronics TT-BH041 Bluetooth Headset"
             }
         ]
     },
@@ -2534,8 +2563,8 @@
         "phones": [
             {
                 "index": 116,
-                "name": "Crossfade II Wireless",
-                "file": "V-MODA Crossfade II Wireless"
+                "name": "Crossfade 2 Wireless",
+                "file": "V-MODA Crossfade 2 Wireless"
             },
             {
                 "index": 116,

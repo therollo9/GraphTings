@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Δ Target","Elysian Annihilator (2023)"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Δ Target"],                   // Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -13,9 +13,9 @@ const init_phones = ["Δ Target","Elysian Annihilator (2023)"],// Optional. Whic
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "",              // Optional. Watermark appears behind graphs
+      watermark_text = "",                          // Optional. Watermark appears behind graphs
       watermark_image_url = "assets/images/watermark.svg",   // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "GraphTings",                  // Optional. Appended to the page title if share URLs are enabled
+      page_title = "GraphTings",                    // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -34,21 +34,22 @@ const init_phones = ["Δ Target","Elysian Annihilator (2023)"],// Optional. Whic
       extraEQBands = 10,                            // Default EQ bands available
       extraEQBandsMax = 20,                         // Max EQ bands available
       extraToneGeneratorEnabled = true,             // Enable tone generator function
-      PHONE_BOOK = "rtings_phone_book.json",              // Path to JSON file containing phone metadata
+      PHONE_BOOK = "rtings_phone_book.json",        // Path to JSON file containing phone metadata
+      default_DF_name = "Δ",                        // Default RAW DF name
+      dfBaseline = true,                            // If true, DF is used as baseline when custom df tilt is on
       default_bass_shelf = 6,                       // Default Custom DF bass shelf value
-      default_tilt = -1,                          // Default Custom DF tilt value
-      default_DF_name = "Δ",            // Default RAW DF name
-      dfBaseline = true;                            // If true, DF is used as baseline when custom df tilt is on
-
+      preference_bounds = "assets/images/bounds.png", // Preference bounds image
+      default_tilt = -1,                            // Default Custom DF tilt value
+      default_ear = 0,                              // Default Custom DF ear gain value
+      default_treble = 0,                           // Default Custom DF treble gain value
+      tiltableTargets = ["Δ", "HMSii.3 Diffuse Field"];         // Targets that are allowed to be tilted
+       
 // Specify which targets to display
 const targets = [
-    { type:"Δ", files:["Δ", "IEF Comp"] },
-    { type:"Neutral",    files:["HMSii.3 Diffuse Field"] },
-    { type:"Reviewer",   files:["IEF Neutral 2023"] },
-//  { type:"Compensation", files:["Oratory1990 Comp"]},
-    // { type:"IEF Members", files:["Brownie", "Brownie Unsmoothened", "Listener (No Bass Shelf)", "Rennsport"]},
-    // { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","AutoEQ","Rtings","Sonarworks"] }
-    { type:"Preference", files:["Rtings"] }
+    { type:"Δ",             files:["Δ", "IEF Comp"] },
+    { type:"Neutral",       files:["HMSii.3 Diffuse Field"] },
+    { type:"Reviewer",      files:["IEF Neutral 2023"] },
+    { type:"Preference",    files:["Rtings"] }
 ];
 
 
@@ -74,6 +75,11 @@ function watermark(svg) {
         wm.append("text")
             .attrs({x:0, y:80, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
             .text(watermark_text);
+    }
+
+    if ( preference_bounds ) {
+        wm.append("image")
+        .attrs({id:'bounds',x:-385, y:-365, width:770, height:770, "xlink:href":preference_bounds, "display":"none"});
     }
 
     // Extra flair
@@ -219,22 +225,6 @@ let headerLogoText = "GRAPHTINGS",
             name: "Headphones",
             url: "headphones.html"
         },
-        // {
-        //     name: "Ranking",
-        //     url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
-        // },
-        // {
-        //     name: "Discord",
-        //     url: "https://discord.harutohiroki.com"
-        // },
-        // {
-        //     name: "Donate",
-        //     url: "https://www.paypal.me/harutohirokiUS"
-        // },
-//  {
-//      name: "GitHub",
-//      url: "https://github.com/HarutoHiroki"
-//  },
 ];
 
 // Source: https://www.teachmeaudio.com/mixing/techniques/audio-spectrum

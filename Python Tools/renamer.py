@@ -2,7 +2,8 @@ import os
 
 
 def main():
-    path = "data_hp/"
+    # path = "Python Tools/in-ear/"
+    path = "Python Tools/over-ear/"
     new_last = " L.txt"
     new_last_hp = " L1.txt"
     # print("Hello World")
@@ -11,7 +12,7 @@ def main():
         if file_extension == "":
             continue
         elif file_extension == ".csv":
-            if path == "data_hp/":
+            if path == "Python Tools/over-ear/":
                 new_file = file_name + new_last_hp
             else:
                 new_file = file_name + new_last

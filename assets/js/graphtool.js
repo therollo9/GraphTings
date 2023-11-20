@@ -34,6 +34,13 @@ doc.html(`
           <button id="avg-all">Average All</button>
         </div>
 
+        <div class="yscaler">
+          <span>Y-axis Scale:</span>
+          <div>
+            <button id="yscalebtn" class="50db">50dB</button>
+          </div>
+        </div>
+
         <div class="zoom">
           <span>Zoom:</span>
           <button>Bass</button>
@@ -81,15 +88,26 @@ doc.html(`
 
       <div class="manage">
         <div class="customDF">
-          <span>Custom Diffuse Field Tilt:</span>
+          <span>Custom Delta Tilt:</span>
+          <div>
+            <input type="number" inputmode="decimal" id="cusdf-tilt" value="`+ default_tilt +`" step="0.1""></input>
+            <span>Tilt (dB/Oct)</span>
+          </div>
           <div>
             <input type="number" inputmode="decimal" id="cusdf-bass" value="`+ default_bass_shelf +`" step="1""></input>
             <span>Bass (dB)</span>
           </div>
           <div>
-            <input type="number" inputmode="decimal" id="cusdf-tilt" value="`+ default_tilt +`" step="0.1""></input>
-            <span>Tilt (dB/Oct)</span>
+          <input type="number" inputmode="decimal" id="cusdf-treb" value="`+ default_treble +`" step="0.1""></input>
+          <span>Treble (dB)</span>
           </div>
+          <div>
+            <input type="number" inputmode="decimal" id="cusdf-ear" value="`+ default_ear +`" step="0.1""></input>
+            <span>Ear Gain (dB)</span>
+          </div>
+          <button id="cusdf-10db" style="margin-right: 10px">10dB Tilt</button>
+          <button id="cusdf-tiltTHIS" style="margin-right: 10px">Tilt Current Target</button>
+          <button id="cusdf-bounds">Preference Bounds</button>
         </div>
         <table class="manageTable">
           <colgroup>
@@ -142,21 +160,23 @@ doc.html(`
           </div>
 
           <div class="extra-panel" style="display: none;">
+            <h4 style="margin:0 0 6px 0">Uploading</h4>
             <div class="extra-upload">
-              <h5>Uploading</h2>
               <button class="upload-fr">Upload FR</button>
               <button class="upload-target">Upload Target</button>
-              <br />
-              <span><small>Uploaded data will not be persistent</small></span>
+              <button class="upload-track">Upload Song</button>
               <form style="display:none"><input type="file" id="file-fr" accept=".csv,.txt" /></form>
+              <form style="display:none"><input type="file" id="file-audio" accept="audio/*" /></form>
             </div>
+            <span style="margin: 0 0 1em 0"><small>Uploaded data will not be persistent</small></span>
             <div class="extra-eq">
-              <h5>Parametric Equalizer</h2>
+              <h4 style="margin:0 0 6px 0">Parametric Equalizer</h4>
               <div class="select-eq-phone">
                 <select name="phone">
                     <option value="" selected>Choose EQ model</option>
                 </select>
               </div>
+              <h3 id="preamp-disp" style="margin-top:12px">Pre-amp: 0.0 dB</h3>
               <div class="filters-header">
                 <span>Type</span>
                 <span>Frequency</span>
@@ -178,36 +198,84 @@ doc.html(`
                     <span><input name="q" type="number" min="0" max="10" step="0.1" value="0"></input></span>
                 </div>
               </div>
-              <div class="settings-row">
-                <span>AutoEQ Range</span>
-                <span><input name="autoeq-from" type="number" min="20" max="20000" step="1" value="20"></input></span>
-                <span><input name="autoeq-to" type="number" min="20" max="20000" step="1" value="20000"></input></span>
-              </div>
               <div class="filters-button">
                 <button class="add-filter">＋</button>
                 <button class="remove-filter">－</button>
                 <button class="sort-filters">Sort</button>
-                <button class="import-filters">Import</button>
-                <button class="export-filters">Export</button>
+                <button class="disable-filters">Disable All</button>
+              </div>
+              <h4 style="margin: 6px 0 3px 0" >AutoEQ</h4>
+              <div class="settings-row" style="margin:0 0 2px 0">
+                <span name="title">Frequency Range</span>
+                <span><input name="autoeq-from" type="number" min="20" max="20000" step="1" value="20"></input></span>
+                <span><input name="autoeq-to" type="number" min="20" max="20000" step="1" value="20000"></input></span>
+              </div>
+              <div class="settings-row" style="margin:0 0 2px 0">
+                <span name="title">Gain Range</span>
+                <span><input name="autoeq-gain-from" type="number" min="-20" max="20" step="0.5" value="-20"></input></span>
+                <span><input name="autoeq-gain-to" type="number" min="-20" max="20" step="0.5" value="20"></input></span>
+              </div>
+              <div class="settings-row" style="margin-top:0;">
+                <span name="title">Q Range</span>
+                <span><input name="autoeq-q-from" type="number" min="0.1" max="10" step="0.1" value="0.1"></input></span>
+                <span><input name="autoeq-q-to" type="number" min="0.1" max="10" step="0.1" value="3"></input></span>
+              </div>
+              <div class="auto-eq-button" style="margin-bottom:6px">              
                 <button class="autoeq">AutoEQ</button>
-                <button class="export-graphic-filters">Export Graphic EQ (For Wavelet)</button>
                 <button class="readme">Readme</button>
               </div>
-              <a style="display: none" id="file-filters-export"></a>
-              <form style="display:none"><input type="file" id="file-filters-import" accept=".txt" /></form>
-            </div>
-            <div class="extra-tone-generator">
-              <h5>Tone Generator</h2>
-              <div class="settings-row">
-                <span>Freq Range</span>
+              <h4 style="margin:0">EQ Demo</h4>
+              <div class="eq-demo">
+                <select class="eq-track">
+                    <option value="pink" selected>Pink Noise</option>
+                    <option value="scarlet">Scarlet Fire</option>
+                    <option value="tone">Tone Generator</option>
+                    <option value="custom-eq-track">Uploaded</option>
+                </select>
+                <span id="songTime">00:00:00</span>
+                <input name="demo-time" type="range" min="0" max="100" step="1" value="0"></input>
+                <div class="volume-button">
+                  <div class="volume-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg>
+                  </div>
+                  <div class="volume-slider">
+                    <input type="range" min="0" max="100" step="0.5" value="12.5" id="volumeRange">
+                  </div>
+                </div>
+                <div id="play-button" style="fill: var(--accent-color-contrast) !important;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                </div>
+              </div>
+              <div class="settings-row hidden" name="tone-gen-range" style="margin-top:0;">
+                <span name="title">Tone Generator Range</span>
                 <span><input name="tone-generator-from" type="number" min="20" max="20000" step="1" value="20"></input></span>
                 <span><input name="tone-generator-to" type="number" min="20" max="20000" step="1" value="20000"></input></span>
               </div>
-              <div><input name="tone-generator-freq" type="range" min="0" max="1" step="0.0001" value="0" /></div>
-              <div>
-                <button class="play">Play</button>
-                <span>Frequency: <span class="freq-text">20</span> Hz</span>
+              <div class="eq-demo hidden" name="tone-gen-slider" style="margin:2px 0 6px 0;">
+                <span name="current-freq">Freq: <span class="freq-text">20</span> Hz</span>
+                <input name="tone-generator-freq" type="range" min="0" max="1" step="0.0001" value="0" />
               </div>
+              <h4 style="margin:0 0 3px 0">Miscellaneous</h4>
+              <div class="settings-row" name="tone-gen-range" style="margin-top:0; text-align:center">
+                <span name="balance-l">Left</span>
+                <span name="title">Channel Balance</span>
+                <span name="balance-r">Right</span>
+              </div>
+              <div class="settings-row" style="margin:3px 0 6px 0;">
+                <span><input id="vol-left" name="vol-left" type="number" min="0" max="10" step="0.1" value="0"></input></span>
+                <span name="title"></span>
+                <span><input id="vol-right" name="vol-right" type="number" min="0" max="10" step="0.1" value="0"></input></span>
+              </div>
+              <div class="settings-row" name="tone-gen-range" style="margin:3px 0 6px 0;">
+                <input name="balance-vol" type="range" min="-10" max="10" step="0.1" value="0"></input>
+              </div>
+              <div class="exports">
+                <button class="import-filters">Import EQ</button>
+                <button class="export-filters">Export Parametric EQ</button>
+                <button class="export-graphic-filters">Export Graphic EQ (Wavelet)</button>
+              </div>
+              <a style="display: none" id="file-filters-export"></a>
+              <form style="display:none"><input type="file" id="file-filters-import" accept=".txt" /></form>
             </div>
           </div>
         </div>
@@ -230,9 +298,29 @@ gr.append("rect").attrs({x:0, y:pad.t-8, width:W0, height:H0-22, rx:4,
                          "class":"graphBackground"});
 watermark(gr);
 
+// Hidden features activation by Konami code
+let konami = false;
+let konami_code = [38,38,40,40,37,39,37,39,66,65]; // up up down down left right left right b a
+let konami_pos = 0;
+doc.on("keydown", function() {
+    if (konami) return;
+    if (d3.event.keyCode == konami_code[konami_pos]) {
+        konami_pos++;
+        if (konami_pos == konami_code.length) {
+            konami = true;
+            console.log("Konami code activated");
+        }
+    } else {
+        konami_pos = 0;
+    }
+});
+
 // custom DF stuff
 let boost = default_bass_shelf;
 let tilt = default_tilt;
+let ear = default_ear;
+let treble = default_treble;
+let df, dfBase;
 
 // Scales
 let x = d3.scaleLog()
@@ -429,6 +517,7 @@ dB.circ = dB.trans.selectAll().data([-1,1]).join("circle")
         dB.scale.attr("transform", "scale(1,"+sc+")");
         dB.h = 15*sc;
         dB.mid.attrs({y:dB.y-dB.h,height:2*dB.h});
+        updateBoundsScaling(h);
         dB.updatey();
     }));
 let yCenter = 90;
@@ -440,6 +529,70 @@ dB.updatey = function (dom) {
     clearLabels();
     gpath.selectAll("path").call(redrawLine);
 }
+
+// y-axis scaler button
+const defY = dB.y;
+
+function updateYScaling(h, y) {
+    let sc = h/dB.H;
+    dB.h = 15*sc;
+    dB.y = y;
+    dB.circ.attr("cy",s=>h*s);
+    dB.scale.attr("transform", "scale(1,"+sc+")");
+    dB.mid.attrs({y:dB.y-dB.h,height:2*dB.h});
+    dB.trans.attr("transform", dB.tr());
+    dB.updatey();
+    updateBoundsScaling(h);
+}
+
+function updateBoundsScaling(h) {
+    let scale = h/76;
+    gr.select("[id=bounds]").attr("transform", "scale(1,"+scale+")");
+    gr.select("[id=bounds]").attr("transform-origin", "0 25");
+}
+updateBoundsScaling(dB.H);
+
+doc.select("#yscalebtn").on("click", function() {
+    // 3 way button, class="crin" is the default, class="40db" is the 40dB scale, class="50db" is the 50dB scale
+    // 5 way now cuz listener said so
+    switch (this.classList[0]) {
+        case "20db":
+            this.classList.remove("20db");
+            this.classList.add("30db");
+            this.innerHTML = "30dB";
+            updateYScaling(101.33, 172);
+            break;
+        case "30db":
+            this.classList.remove("30db");
+            this.classList.add("40db");
+            this.innerHTML = "40dB";
+            updateYScaling(75.95, 172);
+            break;
+        case "40db":
+            this.classList.remove("40db");
+            this.classList.add("50db");
+            this.innerHTML = "50dB";
+            updateYScaling(dB.H, defY);
+            break;
+        case "50db":
+            this.classList.remove("50db");
+            this.classList.add("crin");
+            this.innerHTML = "Crin";
+            updateYScaling(54.77, 156.94);
+            break;
+        case "crin":
+            this.classList.remove("crin");
+            this.classList.add("20db");
+            this.innerHTML = "20dB";
+            updateYScaling(152, 172);
+            break;
+        default:
+            this.className = "50db";
+            this.innerHTML = "50dB";
+            updateYScaling(dB.H, defY);
+            break;
+    }
+});
 
 
 // Label drawing and screenshot
@@ -596,8 +749,12 @@ function saveGraph(ext) {
     gpath.selectAll("path").classed("highlight",false);
     drawLabels();
     showControls(false);
+    gr.select("[id=background]").attrs({"display":"none"}); 
     fn(gr.node(), "graph."+ext, {scale:3})
-        .then(()=>showControls(true));
+        .then(()=>{
+            showControls(true)
+            gr.select("[id=background]").attrs({"display":null});
+        });
     
     // Analytics event
     if (analyticsEnabled) { pushEventTag("clicked_download", targetWindow); }
@@ -812,6 +969,7 @@ function loadFiles(p, callback) {
             alert("Headphone not found!");
         } else {
             let ch = frs.map(f => f && Equalizer.interp(f_values, tsvParse(f)));
+            ch = ch.filter(c => c !== null); // Remove null elements
             callback(ch);
         }
     });
@@ -872,9 +1030,9 @@ function getCurveColor(id, o) {
     let th = 2*Math.PI*i;
     i += Math.cos(th-0.3)/24 + Math.cos(6*th)/32;
     let s = Math.sin(2*Math.PI*i);
-    return d3.hcl(360*((i + t/p2)%1),
+    return d3.hcl(360*((i + t/p2)%1) + (o * 30), // hue varies with "o"
                   88+30*(j%1 + 1.3*s - t/p3),
-                  36+22*(k%1 + 1.1*s + 6*t*(1-s)));
+                  55); //constant luminance
 }
 let getColor_AC = c => getCurveColor(c.p.id, c.o);
 let getColor_ph = (p,i) => getCurveColor(p.id, p.activeCurves[i].o);
@@ -952,7 +1110,7 @@ function setCurves(p, avg, lr, samp) {
     if (samp===undefined) samp = avg ? false : LR.length===1||p.ssamp||false;
     else { p.ssamp = samp; if (samp) avg = false; }
     let dx = +avg - +p.avg,
-        n  = sampnums.length,
+        n  = p.channels.length/2,
         selCh = (l,i) => l.slice(i*n,(i+1)*n);
     p.avg = avg;
     p.samp = samp = n>1 && samp;
@@ -1076,7 +1234,7 @@ function addPhonesToUrl() {
         title = namesCombined + " - " + title;
     }
     if (names.includes("Custom Tilt")) {
-        url += "&bass="+boost+"&tilt="+tilt;
+        url += "&bass="+boost+"&tilt="+tilt+"&treble="+treble+"&ear="+ear;
     }
     if (names.length === 1) {
         targetWindow.document.querySelector("link[rel='canonical']").setAttribute("href",url)
@@ -1552,7 +1710,7 @@ function removeCopies(p) {
     removePhone(p);
 }
 
-function removePhone(p, cdf) {
+function removePhone(p) {
     p.active = p.pin = false; nextPN = null;
     activePhones = activePhones.filter(q => q.active);
     if (!p.isTarget) {
@@ -1562,7 +1720,7 @@ function removePhone(p, cdf) {
         }
     }
     updatePaths();
-    if (!cdf && baseline.p && !baseline.p.active) { setBaseline(baseline0); }
+    if (baseline.p && !baseline.p.active && baseline.p != df) { setBaseline(baseline0); }
     updatePhoneTable();
     d3.selectAll("#phones div,.target")
         .filter(q=>q===(p.copyOf||p))
@@ -1631,34 +1789,42 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
     
     if (ifURL) {
         let url = targetWindow.location.href,
-            par = "share=";
-            emb = "embed";
-            cDFb = "bass=";
-            cDFt = "tilt=";
-        baseURL = url.split("?").shift();
-        let match = decodeURIComponent(url.replace(/_/g," ")).match(/share=([^&]+)/);
-        let str = match && match[1] ? match[1].replace("share=", "") : null;
-        if (url.includes(par) && url.includes(emb)) {
-            //initReq = decodeURIComponent(url.replace(/_/g," ").split(par).pop()).split(",");
-            initReq = str.split(",");
-            loadFromShare = 2;
-        } else if (url.includes(par)) {
-            //initReq = decodeURIComponent(url.replace(/_/g," ").split(par).pop()).split(",");
-            initReq = str.split(",");
-            loadFromShare = 1;
-        }
+        par = "share=",
+        emb = "embed",
+        cDFb = "bass=",
+        cDFt = "tilt=",
+        cDFtr = "treble=",
+        cDFe = "ear=";
+    baseURL = url.split("?").shift();
+    let match = decodeURIComponent(url.replace(/_/g," ")).match(/share=([^&]+)/);
+    let str = match && match[1] ? match[1].replace("share=", "") : null;
+    let cTiltParams = decodeURIComponent(url.replace(/_/g," ")).match(/bass=([^&]+)&tilt=([^&]+)&treble=([^&]+)&ear=([^&]+)/);
+    if (url.includes(par) && url.includes(emb)) {
+        //initReq = decodeURIComponent(url.replace(/_/g," ").split(par).pop()).split(",");
+        initReq = str.split(",");
+        loadFromShare = 2;
+    } else if (url.includes(par)) {
+        //initReq = decodeURIComponent(url.replace(/_/g," ").split(par).pop()).split(",");
+        initReq = str.split(",");
+        loadFromShare = 1;
+    }
 
-        if (url.includes(cDFb)) {
-            let match = decodeURIComponent(url.replace(/_/g," ")).match(/bass=([^&]+)/);
-            let str = match && match[1] ? match[1].replace("bass=", "") : null;
-            boost = parseFloat(str);
-        }
-        
-        if (url.includes(cDFt)) {
-            let match = decodeURIComponent(url.replace(/_/g," ")).match(/tilt=([^&]+)/);
-            let str = match && match[1] ? match[1].replace("tilt=", "") : null;
-            tilt = parseFloat(str);
-        }
+    if (url.includes(cDFb)) {
+        boost = parseFloat(cTiltParams[1]);
+    }
+    
+    if (url.includes(cDFt)) {
+        tilt = parseFloat(cTiltParams[2]);
+    }
+    
+    if (url.includes(cDFtr)) {
+        treble = parseFloat(cTiltParams[3]);
+    }
+    
+    if (url.includes(cDFe)) {
+        ear = parseFloat(cTiltParams[4]);
+    }
+    
 
     }
     let isInit = initReq ? f => initReq.indexOf(f) !== -1
@@ -1745,20 +1911,59 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
         });
     }
 
-    inits.map(p => p.copyOf ? showVariant(p.copyOf, p, initMode)
-                            : showPhone(p,0,1, initMode));
-
-    // -------------------- Custom DF Tilt -------------------- //
-    let df = window.brandTarget.phoneObjs.find(p => p.dispName === default_DF_name);
-    if (!df.rawChannels) {
-        loadFiles(df, function (ch) {
-            df.rawChannels = ch;
-        });
-    }
+    df = window.brandTarget.phoneObjs.find(p => p.dispName === default_DF_name);
+    loadFiles(df, function (ch) {
+        df.rawChannels = ch;
+        showPhone(df, false);
+        dfBase = getBaseline(df);
+        removePhone(df);
+        if (isInit("Custom Tilt") || init_phones.includes(default_DF_name + " Target")) {
+            updateDF(boost, tilt, ear, treble);
+            doc.select("#cusdf-bass").node().value = boost;
+            doc.select("#cusdf-tilt").node().value = tilt;
+            doc.select("#cusdf-ear").node().value = ear;
+            doc.select("#cusdf-treb").node().value = treble;
+        }
+    });
     
-    function updateDF (boost, tilt, change) {
+    inits.map(p => p.copyOf ? showVariant(p.copyOf, p, initMode)
+    : showPhone(p,0,1, initMode));
+    
+    // -------------------- Custom DF Tilt -------------------- //
+    let customTiltName = default_DF_name;
+    let tiltTHIS = doc.select("#cusdf-tiltTHIS");
+    // if tiltTHIS is clicked, switch df to current active target if exists
+    tiltTHIS.on("click", function () {
+        if (activePhones.length > 0) {
+            let activeTarget = activePhones.filter(p => p.isTarget)[0];
+            if (activeTarget) {
+                // if target name is not included in tiltableTargets array, warn user and return
+                if (!tiltableTargets.includes(activeTarget.dispName)) {
+                    alert("This target is not supported for custom tilt.");
+                    return;
+                }
+                // if target exists, switch df to first target
+                df = activeTarget;
+                customTiltName = activeTarget.dispName;
+                if (activeTarget.dispName == "Δ") customTiltName = "Delta (Δ)";
+                if (!df.rawChannels) {
+                    loadFiles(df, function (ch) {
+                        df.rawChannels = ch;
+                    });
+                }
+                dfBase = getBaseline(df);
+                updateDF(boost, tilt, ear, treble);
+            }
+        }
+    });
+    
+    function updateDF (boost, tilt, ear, treble, change) {
         // Bass Shelf
-        let filters = [{disabled: false, type:"LSQ", freq:102.5, q:0.7, gain:boost}]; 
+        let filters = [
+            {disabled: false, type:"LSQ", freq:105, q:0.7759, gain:boost},
+            {disabled: false, type:"PK", freq:2800, q:1.8, gain:ear},
+            {disabled: false, type:"HSQ", freq:2500, q:0.3913, gain:treble}
+        ]; 
         let bass = df.rawChannels.map(c => c ? Equalizer.apply(c, filters) : null);
         // Tilt
         let tiltOct = new Array(bass.length).fill(null);
@@ -1779,16 +1984,26 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
         // New Tilt
         let brand = window.brandTarget;
         let phoneObjs = brand.phoneObjs;
+        let fullDispName = customTiltName;
+        tilt != 0 || boost != 0 || treble != 0 || ear != 0 ? fullDispName += " (" : null;
+        tilt != 0 ? fullDispName += "Tilt: " + tilt + "dB/Oct" : null;
+        tilt != 0 && (boost != 0 || treble !=0 || ear != 0) ? fullDispName += ", " : null;
+        boost != 0 ? fullDispName += "Bass: " + boost + "dB" : null;
+        boost != 0 && (treble != 0 || ear != 0) ? fullDispName += ", " : null;
+        treble != 0 ? fullDispName += "Treble: " + treble + "dB" : null;
+        treble != 0 && ear != 0 ? fullDispName += ", " : null;
+        ear != 0 ? fullDispName += "Ear: " + ear + "dB" : null;
+        tilt != 0 || boost != 0 || treble != 0 || ear != 0 ? fullDispName += ")" : null;
         let phoneObj = { isTarget:true, brand:brand, phone:"Custom Tilt",
-            fullName:"Custom Delta (Δ) Tilt (Bass: " + boost + "dB, Tilt: " + tilt + "dB/Oct)",
-            dispName:"Custom Delta (Δ) Tilt",
+        fullName:fullDispName,
+        dispName:"Custom " + customTiltName + " Tilt",
             fileName:"Custom Tilt"};
         phoneObj.rawChannels = [tiltOct];
         phoneObj.id = -69;
         
         let oldPhoneObj = brand.phoneObjs.filter(p => p.phone == "Custom Tilt")[0]
         if (oldPhoneObj) {
-            oldPhoneObj.active && removePhone(oldPhoneObj);
+            // removePhone(oldPhoneObj);
             phoneObj.id = oldPhoneObj.id;
             phoneObjs[phoneObjs.indexOf(oldPhoneObj)] = phoneObj;
         } else {
@@ -1797,9 +2012,8 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
         showPhone(phoneObj, true);
 
         if (dfBaseline) {
-            showPhone(df, false);
-            setBaseline(getBaseline(df));
-            removePhone(df, true);
+            setBaseline(dfBase);
+            drawLabels();
         }
 
         // focus cusdf inputs
@@ -1807,28 +2021,82 @@ d3.json(typeof PHONE_BOOK !== "undefined" ? PHONE_BOOK
             doc.select("#cusdf-bass").node().focus();
         } else if (change === "tilt") {
             doc.select("#cusdf-tilt").node().focus();
+        } else if (change === "ear") {
+            doc.select("#cusdf-ear").node().focus();
+        } else if (change === "treble") {
+            doc.select("#cusdf-treb").node().focus();
         }
     }
 
     doc.select("#cusdf-bass").on("change input", function () {
         if (!this.value.match(/^-?\d*(\.\d+)?$/)) return;
         boost = +this.value;
-        updateDF(boost, tilt, "bass");
+        if (konami) {
+            // hidden features
+        }
+        updateDF(boost, tilt, ear, treble, "bass");
     });
 
     doc.select("#cusdf-tilt").on("change input", function () {
         if (!this.value.match(/^-?\d*(\.\d+)?$/)) return;
         tilt = +this.value;
-        updateDF(boost, tilt, "tilt");
+        updateDF(boost, tilt, ear, treble, "tilt");
     });
-                            
-    // shareable DF tilt
-    if (isInit("Custom Tilt") || init_phones.includes(default_DF_name + " Target")) {
-        loadFiles(df, function (ch) {
-            df.rawChannels = ch;
-            updateDF(boost, tilt);
-        });
-    }
+
+    doc.select("#cusdf-ear").on("change input", function () {
+        if (!this.value.match(/^-?\d*(\.\d+)?$/)) return;
+        ear = +this.value;
+        updateDF(boost, tilt, ear, treble, "ear");
+    });
+
+    doc.select("#cusdf-treb").on("change input", function () {
+        if (!this.value.match(/^-?\d*(\.\d+)?$/)) return;
+        treble = +this.value;
+        updateDF(boost, tilt, ear, treble, "treble");
+    });
+
+    // Standard 10dB delta used by Crinacle and Headphones.com button
+    doc.select("#cusdf-10db").on("click", function () {
+        // zero bass boost
+        boost = 0;
+        // tilt -1dB/oct
+        tilt = -1;
+        updateDF(boost, tilt, ear, treble);
+        // update cusdf inputs
+        doc.select("#cusdf-bass").node().value = boost;
+        doc.select("#cusdf-tilt").node().value = tilt;
+    });
+
+    // Preference Bounds button
+    doc.select("#cusdf-bounds").on("click", function () {
+        function toggleHide(p) {
+            let h = p.hide;
+            let t = table.selectAll("tr").filter(q=>q===p);
+            t.select(".keyLine").on("click", h?null:toggleHide)
+                .selectAll("path,.imbalance").attr("opacity", h?null:0.5);
+            t.select(".hideIcon").classed("selected", !h);
+            gpath.selectAll("path").filter(c=>c.p===p)
+                .attr("opacity", h?null:0);
+            p.hide = !h;
+            if (labelsShown) {
+                clearLabels();
+                drawLabels();
+            }
+        }
+        let boundsBtn = gr.select("[id=bounds]");
+        if (boundsBtn.attr("display") == "none") {
+            boundsBtn.attr("display", "block");
+            setBaseline(dfBase);
+            drawLabels();
+            // hide all targets
+            activePhones.filter(p => p.isTarget).forEach(p => toggleHide(p));
+        } else {
+            boundsBtn.attr("display", "none");
+            // unhide all targets
+            activePhones.filter(p => p.isTarget).forEach(p => toggleHide(p));
+        }
+
+    });
 
     function setBrand(b, exclusive) {
         let phoneSel = doc.select("#phones").selectAll("div.phone-item");
@@ -2322,9 +2590,6 @@ function addExtra() {
     if (!extraEQEnabled) {
         document.querySelector("div.extra-panel > div.extra-eq").style["display"] = "none";
     }
-    if (!extraToneGeneratorEnabled) {
-        document.querySelector("div.extra-panel > div.extra-tone-generator").style["display"] = "none";
-    }
     // Show and hide extra panel
     window.showExtraPanel = () => {
         document.querySelector("div.select > div.selector-panel").style["display"] = "none";
@@ -2348,6 +2613,12 @@ function addExtra() {
         uploadType = "target";
         fileFR.click();
     });
+    let fileAudio = document.querySelector("#file-audio");
+    document.querySelector("div.extra-upload > button.upload-track").addEventListener("click", () => {
+        uploadType = "audio";
+        fileAudio.click();
+    });
+
     let addOrUpdatePhone = (brand, phone, ch) => {
         let phoneObj = asPhoneObj(brand, phone);
         phoneObj.rawChannels = ch;
@@ -2390,7 +2661,7 @@ function addExtra() {
                 let fullName = name + (name.match(/ Target$/i) ? "" : " Target");
                 let existsTargets = targets.reduce((a, b) => a.concat(b.files), []).map(f => f += " Target");
                 if (existsTargets.indexOf(fullName) >= 0) {
-                    alert("This target already exists on this tool, please select it instead of upload.");
+                    alert("This target already exists on this tool, please select it instead of uploading.");
                     return;
                 }
                 let phoneObj = {
@@ -2409,6 +2680,35 @@ function addExtra() {
         };
         reader.readAsText(file);
     });
+    // eq test track
+    fileAudio.addEventListener("change", (e) => {
+        let file = e.target.files[0];
+        if (!file) {
+            return;
+        }
+        // if theres already an uploaded track, replace it
+        if (uploadedAudio || uploadedSource) {
+            console.log(e.target.files[0]);
+            uploadedAudio.pause();
+            currentAudio.currentTime = 0;
+
+            let pinkNoisePlayButton = document.getElementById("play-button");
+            pinkNoisePlayButton.classList.remove("playing");
+            pinkNoisePlayButton.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M3 22v-20l18 10-18 10z\"/></svg>";
+
+            uploadedAudio = null;
+            uploadedSource.disconnect();
+        }
+        const objectURL = URL.createObjectURL(file);
+        uploadedAudio = new Audio(objectURL);
+        uploadedSource = audioContext.createMediaElementSource(uploadedAudio);
+
+        let eqDemo = document.querySelector("div.eq-demo");
+        let eqTrack = eqDemo.querySelector(".eq-track");
+        eqTrack.value = "custom-eq-track";
+        eqTrack.dispatchEvent(new Event("change"));
+    });
+
     // EQ Function
     let eqPhoneSelect = document.querySelector("div.extra-eq select[name='phone']");
     let filtersContainer = document.querySelector("div.extra-eq > div.filters");
@@ -2497,12 +2797,14 @@ function addExtra() {
             phoneObj.rawChannels.map(c => c ? Equalizer.apply(c, filters) : null));
         phoneObj.eq = phoneObjEQ;
         phoneObjEQ.eqParent = phoneObj;
+        updatePreampDisplay();
         showPhone(phoneObjEQ, false);
         activeElem.focus();
     };
     let applyEQ = () => {
         clearTimeout(applyEQHandle);
         applyEQHandle = setTimeout(applyEQExec, 100);
+        updateFilters(elemToFilters());
     };
     window.updateEQPhoneSelect = () => {
         let oldValue = eqPhoneSelect.value;
@@ -2534,6 +2836,31 @@ function addExtra() {
     document.querySelector("div.extra-eq button.sort-filters").addEventListener("click", () => {
         filtersToElem(elemToFilters(true).sort((a, b) =>
             (a.freq || Infinity) - (b.freq || Infinity)));
+    });
+    // Disable / Enable all filters
+    document.querySelector("div.extra-eq button.disable-filters").addEventListener("click", () => {
+        // if button is not selected then disable all filters
+        if (!document.querySelector("div.extra-eq button.disable-filters").classList.contains("selected")) {
+            // add selected class to button
+            document.querySelector("div.extra-eq button.disable-filters").classList.add("selected");
+            // rename button to enable all filters
+            document.querySelector("div.extra-eq button.disable-filters").innerText = "Enable All";
+            // disable all filters
+            for (let i = 0; i < eqBands; ++i) {
+                filterEnabledInput[i].checked = false;
+            }
+            applyEQ();
+        } else { // enables all filters
+            // remove selected class to button
+            document.querySelector("div.extra-eq button.disable-filters").classList.remove("selected");
+            // rename button to disable all filters
+            document.querySelector("div.extra-eq button.disable-filters").innerText = "Disable All";
+            // enable all filters
+            for (let i = 0; i < eqBands; ++i) {
+                filterEnabledInput[i].checked = true;
+            }
+            applyEQ();
+        }
     });
     // Import filters
     document.querySelector("div.extra-eq button.import-filters").addEventListener("click", () => {
@@ -2590,7 +2917,7 @@ function addExtra() {
             p => p.fullName == phoneSelected && p.eq)[0];
         let filters = elemToFilters(true);
         if (!phoneObj || !filters.length) {
-            alert("Please select model and add atleast one filter before export.");
+            alert("Please select model and add at least one filter before exporting.");
             return;
         }
         let preamp = Equalizer.calc_preamp(
@@ -2621,7 +2948,7 @@ function addExtra() {
             p => p.fullName == phoneSelected && p.eq)[0] || { fullName: "Unnamed" };
         let filters = elemToFilters();
         if (!filters.length) {
-            alert("Please add atleast one filter before export.");
+            alert("Please add at least one filter before exporting.");
             return;
         }
         let graphicEQ = Equalizer.as_graphic_eq(filters);
@@ -2639,13 +2966,21 @@ function addExtra() {
             "2. Adding/Removing bands before AutoEQ may give you a better results.\n" +
             "3. Using PK filters close to 20kHz is finnicky; avoid touching frequencies beyond 15kHz if you're not sure how your DSP software works.\n" +
             "4. EQing treble frequencies require resonant peak matching and fine-tuning by ear. Keep the treble regions untouched if you're new to EQing.\n" +
-            "5. Use the Tone Generator to find the actual location of peaks and dips to your own ears. Do note that the web version may not work on some platforms.\n");
+            "5. Use the Tone Generator inside EQ Demo dropdown to find the actual location of peaks and dips to your own ears. Do note that the web version may not work on some platforms.\n");
     });
     // AutoEQ
     let autoEQFromInput = document.querySelector("div.extra-eq input[name='autoeq-from']");
     let autoEQToInput = document.querySelector("div.extra-eq input[name='autoeq-to']");
+    let autoEQGainFromInput = document.querySelector("div.extra-eq input[name='autoeq-gain-from']");
+    let autoEQGainToInput = document.querySelector("div.extra-eq input[name='autoeq-gain-to']");
+    let autoEQQFromInput = document.querySelector("div.extra-eq input[name='autoeq-q-from']");
+    let autoEQQToInput = document.querySelector("div.extra-eq input[name='autoeq-q-to']");
     autoEQFromInput.value = Equalizer.config.AutoEQRange[0].toFixed(0);
     autoEQToInput.value = Equalizer.config.AutoEQRange[1].toFixed(0);
+    autoEQGainFromInput.value = Equalizer.config.OptimizeGainRange[0].toFixed(0);
+    autoEQGainToInput.value = Equalizer.config.OptimizeGainRange[1].toFixed(0);
+    autoEQQFromInput.value = Equalizer.config.OptimizeQRange[0].toFixed(1);
+    autoEQQToInput.value = Equalizer.config.OptimizeQRange[1].toFixed(1);
     document.querySelector("div.extra-eq button.autoeq").addEventListener("click", () => {
         // Generate filters automatically
         let phoneSelected = eqPhoneSelect.value;
@@ -2660,7 +2995,7 @@ function addExtra() {
         let targetObj = (activePhones.filter(p => p.isTarget)[0] ||
             activePhones.filter(p => p !== phoneObj && !p.isTarget)[0]);
         if (!phoneObj || !targetObj) {
-            alert("Please select model and target, if there are no target and multiple models are displayed then the second one will be selected as target.");
+            alert("Please select model and target, if there are no targets and multiple models are displayed then the second one will be selected as target.");
             return;
         }
         let autoEQOverlay = document.querySelector(".extra-eq-overlay");
@@ -2669,6 +3004,12 @@ function addExtra() {
             let autoEQFrom = Math.min(Math.max(parseInt(autoEQFromInput.value) || 0, 20), 20000);
             let autoEQTo = Math.min(Math.max(parseInt(autoEQToInput.value) || 0, autoEQFrom), 20000);
             Equalizer.config.AutoEQRange = [autoEQFrom, autoEQTo];
+            let autoEQGainFrom = Math.min(Math.max(parseInt(autoEQGainFromInput.value) || 0, -20), 20);
+            let autoEQGainTo = Math.min(Math.max(parseInt(autoEQGainToInput.value) || 0, autoEQGainFrom), 20);
+            Equalizer.config.OptimizeGainRange = [autoEQGainFrom, autoEQGainTo];
+            let autoEQQFrom = Math.min(Math.max(parseFloat(autoEQQFromInput.value) || 0, 0.1), 5);
+            let autoEQQTo = Math.min(Math.max(parseFloat(autoEQQToInput.value) || 0, autoEQQFrom), 5);
+            Equalizer.config.OptimizeQRange = [autoEQQFrom, autoEQQTo];
             let phoneCHs = (phoneObj.rawChannels.filter(c => c)
                 .map(ch => ch.map(([f, v]) => [f, v + phoneObj.norm])));
             let phoneCH = (phoneCHs.length > 1) ? avgCurves(phoneCHs) : phoneCHs[0];
@@ -2679,49 +3020,318 @@ function addExtra() {
             autoEQOverlay.style.display = "none";
         }, 100);
     });
-    // Tone Generator
-    let toneGeneratorFromInput = document.querySelector("div.extra-tone-generator input[name='tone-generator-from']");
-    let toneGeneratorToInput = document.querySelector("div.extra-tone-generator input[name='tone-generator-to']");
-    let toneGeneratorSlider = document.querySelector("div.extra-tone-generator input[name='tone-generator-freq']");
-    let toneGeneratorPlayButton = document.querySelector("div.extra-tone-generator .play");
-    let toneGeneratorText = document.querySelector("div.extra-tone-generator .freq-text");
-    let toneGeneratorContext = null;
+
+    //* Pre amp Calc display *//
+    function updatePreampDisplay() {
+        let phoneSelected = eqPhoneSelect.value;
+        let phoneObj = phoneSelected && activePhones.filter(
+            p => p.fullName == phoneSelected && p.eq)[0];
+        let preamp = Equalizer.calc_preamp(
+            phoneObj.rawChannels.filter(c => c)[0],
+            phoneObj.eq.rawChannels.filter(c => c)[0]);
+        let preampDisplay = document.getElementById("preamp-disp");
+        if (preampDisplay) {
+            preampDisplay.innerText = "Pre-amp: " + preamp.toFixed(1) + " dB";
+        }
+    }
+
+    
+    let toneGeneratorFromInput = document.querySelector("div.settings-row input[name='tone-generator-from']");
+    let toneGeneratorToInput = document.querySelector("div.settings-row input[name='tone-generator-to']");
+    let toneGeneratorSlider = document.querySelector("div.eq-demo input[name='tone-generator-freq']");
+    let toneGeneratorText = document.querySelector("div.eq-demo .freq-text");
+    let toneGenRange = document.querySelector("div.settings-row[name='tone-gen-range']");
+    let toneGenSlider = document.querySelector("div.eq-demo[name='tone-gen-slider']");
     let toneGeneratorOsc = null;
-    let toneGeneratorTimeoutHandle = null
-    toneGeneratorSlider.addEventListener("input", () => {
-        let from = Math.min(Math.max(parseInt(toneGeneratorFromInput.value) || 0, 20), 20000);
-        let to = Math.min(Math.max(parseInt(toneGeneratorToInput.value) || 0, from), 20000);
-        let position = parseFloat(toneGeneratorSlider.value) || 0;
-        let freq = Math.round(Math.exp( // Slider move in log scale
-            Math.log(from) + (Math.log(to) - Math.log(from)) * position));
-        toneGeneratorText.innerText = freq;
-        if (toneGeneratorOsc) {
-            let t = toneGeneratorContext.currentTime;
-            toneGeneratorOsc.frequency.cancelScheduledValues(t);
-            toneGeneratorOsc.frequency.setTargetAtTime(freq, t, 0.2); // Smoother transition but also delay
-        }
-    });
-    toneGeneratorPlayButton.addEventListener("click", () => {
-        if (toneGeneratorOsc) {
-            toneGeneratorOsc.stop();
-            toneGeneratorOsc = null;
-            toneGeneratorPlayButton.innerText = "Play";
+
+    //* PINK NOISE WITH EQ FROM ABOVE, requested by listener *//
+    
+    // custom EQ stuff
+    let pinkNoiseAudio, pinkNoiseSource, scarletFireAudio, scarletFireSource, 
+        uploadedAudio, uploadedSource, currentAudio, currentSource;
+    let toneGenActive = false;
+
+    //* ---------- Audio Context ---------- *//
+    let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    if (!audioContext) {
+        alert("Web audio api is disabled, please enable it if you want to use EQ testing functions.");
+        return;
+    }
+
+    //* ---------- Volume, Channel Balance Stuff ---------- *//
+    // create and set the initial value of the volume slider
+    const volumeIcon = document.querySelector('.volume-icon');
+    const volumeRange = document.getElementById('volumeRange');
+    let currentVolume = 12.5;
+    let volumeNode = audioContext.createGain();
+    volumeNode.gain.value = 0.125;
+
+    // channel splitter and merger to split the audio into left and right channels
+    let channelSplitter = audioContext.createChannelSplitter(2);
+    let channelMerger = audioContext.createChannelMerger(2);
+    let rightChannel = audioContext.createGain();
+    let leftChannel = audioContext.createGain();
+    
+    // volume stuff
+    volumeIcon.addEventListener("click", () => {
+        if (volumeIcon.classList.contains("muted")) {
+            volumeIcon.classList.remove("muted");
+            volumeIcon.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z\"/></svg>"
+            volumeRange.value = currentVolume;
+            volumeNode.gain.value = currentVolume/100;
         } else {
-            if (!toneGeneratorContext) {
-                if (!window.AudioContext) {
-                    alert("Web audio api is disabled, please enable it if you want to use tone generator.");
-                    return;
-                }
-                toneGeneratorContext = new AudioContext();
-            }
-            toneGeneratorOsc = toneGeneratorContext.createOscillator();
-            toneGeneratorOsc.type = "sine";
-            toneGeneratorOsc.frequency.value = parseInt(toneGeneratorText.innerText);
-            toneGeneratorOsc.connect(toneGeneratorContext.destination);
-            toneGeneratorOsc.start();
-            toneGeneratorPlayButton.innerText = "Stop";
+            volumeIcon.classList.add("muted");
+            volumeIcon.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 7.358v15.642l-8-5v-.785l8-9.857zm3-6.094l-1.548-1.264-3.446 4.247-6.006 3.753v3.646l-2 2.464v-6.11h-4v10h.843l-3.843 4.736 1.548 1.264 18.452-22.736z\"/></svg>"
+            currentVolume = volumeRange.value;
+            volumeRange.value = 0;
+            volumeNode.gain.value = 0;
         }
     });
+    
+    volumeRange.addEventListener("input", () => {
+        currentVolume = volumeRange.value;
+        volumeNode.gain.value = volumeRange.value/100;
+    });
+    
+    // channel balance feature
+    let channelBalanceSlider = document.querySelector("div.settings-row input[name='balance-vol']");
+    let rightVol = 1;
+    let leftVol = 1;
+    
+    function updateChannelBalance(leftVol, rightVol) {
+        leftChannel.gain.setValueAtTime(leftVol, audioContext.currentTime);
+        rightChannel.gain.setValueAtTime(rightVol, audioContext.currentTime);
+    }
+    
+    channelBalanceSlider.addEventListener("input", () => {
+        let balValue = channelBalanceSlider.value;
+        leftVol = balValue < 0 ? Math.pow(10, Math.abs(balValue) / 20) : 1;
+        rightVol = balValue > 0 ? Math.pow(10, Math.abs(balValue) / 20) : 1;
+    
+        updateChannelBalance(leftVol, rightVol);
+    
+        // update volume text display
+        doc.select("#vol-left").node().value = balValue < 0 ? Math.abs(balValue) : 0.0;
+        doc.select("#vol-right").node().value = balValue > 0 ? Math.abs(balValue) : 0.0;
+    });
+    
+    // channel balance text input
+    doc.select("#vol-left").on("change input", function () {
+        let balValue = doc.select("#vol-left").node().value;
+        leftVol = balValue > 0 ? Math.pow(10, Math.abs(balValue) / 20) : 1;
+        updateChannelBalance(leftVol, rightVol);
+    
+        // update balance slider
+        channelBalanceSlider.value = -balValue;
+    });
+    
+    doc.select("#vol-right").on("change input", function () {
+        let balValue = doc.select("#vol-right").node().value;
+        rightVol = balValue > 0 ? Math.pow(10, Math.abs(balValue) / 20) : 1;
+        updateChannelBalance(leftVol, rightVol);
+    
+        // update balance slider
+        channelBalanceSlider.value = balValue;
+    });
+
+    // connect the splitter and merger
+    channelSplitter.connect(leftChannel, 0);
+    channelSplitter.connect(rightChannel, 1);
+    leftChannel.connect(channelMerger, 0, 0);
+    rightChannel.connect(channelMerger, 0, 1);
+
+    // connect overall volume to merger and then to destination
+    channelMerger.connect(volumeNode);
+    volumeNode.connect(audioContext.destination);
+
+    // Filters
+    function updateFilters(filters) {
+        if (filters.length == 0) {
+            filters = [{ type: "PK", freq: 20, q: 0, gain: 0 }];
+        }
+    
+        applyFilters(audioContext, currentSource, filters);
+    }
+
+    function applyFilters(audioContext, inputNode, filters) {
+        const nodes = [inputNode];
+    
+        nodes[nodes.length - 1].disconnect();
+
+        if (inputNode == pinkNoiseSource || inputNode == toneGeneratorOsc) {
+            // Duplicate the mono/stereo channel into stereo
+            const splitter = audioContext.createChannelSplitter(2);
+            inputNode.connect(splitter);
+            nodes.push(splitter);
+        
+            const merger = audioContext.createChannelMerger(2);
+            nodes[nodes.length - 1].connect(merger, 0, 0); // Connect to the left channel
+            nodes[nodes.length - 1].connect(merger, 0, 1); // Connect to the right channel
+            nodes.push(merger);
+        }
+
+        filters.forEach(filterInfo => {
+            const filter = audioContext.createBiquadFilter();
+            let type;
+            if (filterInfo.type == "PK") {
+                type = "peaking";
+            } else if (filterInfo.type == "LSQ") {
+                type = "lowshelf";
+            } else if (filterInfo.type == "HSQ") {
+                type = "highshelf";
+            }
+            filter.type = type;
+            filter.frequency.value = filterInfo.freq;
+            filter.Q.value = filterInfo.q;
+            filter.gain.value = filterInfo.gain;
+            
+            nodes[nodes.length - 1].connect(filter);
+            nodes.push(filter);
+        });
+        
+        nodes[nodes.length - 1].connect(channelSplitter);
+    }
+    
+    // load pink noise audio file
+    document.addEventListener("DOMContentLoaded", () => {
+        pinkNoiseAudio = document.getElementById("pinkNoiseAudio");
+        pinkNoiseSource = audioContext.createMediaElementSource(pinkNoiseAudio);
+        scarletFireAudio = document.getElementById("scarletFIRE");
+        scarletFireSource = audioContext.createMediaElementSource(scarletFireAudio);
+        currentAudio = pinkNoiseAudio;
+        currentSource = pinkNoiseSource;
+
+        // apply filters
+        applyFilters(audioContext, currentSource, elemToFilters());
+        
+        // track swapping
+        let pinkNoisePlayButton = document.getElementById("play-button");
+        let eqDemo = document.querySelector("div.eq-demo");
+        let eqTrack = eqDemo.querySelector(".eq-track");
+        eqTrack.addEventListener("change", () => {
+            // pause and reset audio
+            if (toneGenActive && toneGeneratorOsc) {
+                currentSource.stop();
+                toneGeneratorOsc = null;
+            } else {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            pinkNoisePlayButton.classList.remove("playing");
+            pinkNoisePlayButton.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M3 22v-20l18 10-18 10z\"/></svg>";
+
+            switch (eqTrack.value) {
+                default:
+                    toneGenActive = false;
+                    toneGenRange.classList.add("hidden");
+                    toneGenSlider.classList.add("hidden");
+                    currentAudio = pinkNoiseAudio;
+                    currentSource = pinkNoiseSource;
+                    break;
+                case "scarlet":
+                    toneGenActive = false;
+                    toneGenRange.classList.add("hidden");
+                    toneGenSlider.classList.add("hidden");
+                    currentAudio = scarletFireAudio;
+                    currentSource = scarletFireSource;
+                    break;
+                case "custom-eq-track":
+                    if (!uploadedAudio || !uploadedSource) {
+                        alert("Please upload an audio file first.");
+                        eqTrack.value = "pink";
+                        currentAudio = pinkNoiseAudio;
+                        currentSource = pinkNoiseSource;
+                        return;
+                    }
+                    toneGenActive = false;
+                    toneGenRange.classList.add("hidden");
+                    toneGenSlider.classList.add("hidden");
+                    currentAudio = uploadedAudio;
+                    currentSource = uploadedSource;
+                    break;
+                case "tone":
+                    toneGenActive = true;
+                    toneGenRange.classList.remove("hidden");
+                    toneGenSlider.classList.remove("hidden");
+                    break;
+            }
+
+            // display current song time progress
+            let songProgressSlider = document.querySelector("div.eq-demo input[name='demo-time']");
+            let songTimeText = document.getElementById("songTime");
+    
+            currentAudio.addEventListener("timeupdate", () => {
+                let songTime = currentAudio.currentTime;
+                let songMinutes = Math.floor(songTime / 60);
+                let songSeconds = Math.floor(songTime % 60);
+                let songHours = Math.floor(songMinutes / 60);
+                songMinutes %= 60;
+                songSeconds = songSeconds < 10 ? "0" + songSeconds : songSeconds;
+                songMinutes = songMinutes < 10 ? "0" + songMinutes : songMinutes;
+                songHours = songHours < 10 ? "0" + songHours : songHours;
+                songTimeText.innerText = songHours + ":" + songMinutes + ":" + songSeconds;
+                songProgressSlider.value = (songTime / currentAudio.duration) * 100;
+            });    
+
+            // skip forward and backward on song progress slider
+            songProgressSlider.addEventListener("input", () => {
+                currentAudio.currentTime = (songProgressSlider.value / 100) * currentAudio.duration;
+            });
+        });
+
+        // tone generator frequency slider
+        toneGeneratorSlider.addEventListener("input", () => {
+            let from = Math.min(Math.max(parseInt(toneGeneratorFromInput.value) || 0, 20), 20000);
+            let to = Math.min(Math.max(parseInt(toneGeneratorToInput.value) || 0, from), 20000);
+            let position = parseFloat(toneGeneratorSlider.value) || 0;
+            let freq = Math.round(Math.exp( // Slider move in log scale
+                Math.log(from) + (Math.log(to) - Math.log(from)) * position));
+            toneGeneratorText.innerText = freq;
+            if (toneGeneratorOsc) {
+                let t = audioContext.currentTime;
+                toneGeneratorOsc.frequency.cancelScheduledValues(t);
+                toneGeneratorOsc.frequency.setTargetAtTime(freq, t, 0.2);
+            }
+        });
+
+        // when song ends, reset button
+        currentAudio.addEventListener("ended", () => {
+            pinkNoisePlayButton.classList.remove("playing");
+            pinkNoisePlayButton.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M3 22v-20l18 10-18 10z\"/></svg>";
+        });
+
+        // play pink noise when button class="pink-noise" is clicked and stop when clicked again
+        pinkNoisePlayButton.addEventListener("click", () => {
+            if (pinkNoisePlayButton.classList.contains("playing")) {
+                if (toneGenActive && toneGeneratorOsc) {
+                    currentSource.stop();
+                    toneGeneratorOsc = null;
+                } else {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                pinkNoisePlayButton.classList.remove("playing");
+                pinkNoisePlayButton.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M3 22v-20l18 10-18 10z\"/></svg>";
+            } else {
+                audioContext.resume();
+                if (toneGenActive) {
+                    toneGeneratorOsc = audioContext.createOscillator();
+                    toneGeneratorOsc.type = "sine";
+                    toneGeneratorOsc.frequency.value = parseInt(toneGeneratorText.innerText);
+                    currentSource = toneGeneratorOsc;
+                    updateFilters(elemToFilters());
+                    currentSource.start();
+                } else {
+                    updateFilters(elemToFilters());
+                    currentAudio.play();
+                }
+                pinkNoisePlayButton.classList.add("playing");
+                pinkNoisePlayButton.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z\"/></svg>"
+            }
+        });
+    });
+
     // get average of all active headphones except targets
     function getAvgAll() {
         let v = activePhones.filter(p => !p.isTarget).map(p => getAvg(p));

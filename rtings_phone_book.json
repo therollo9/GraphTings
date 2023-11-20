@@ -201,6 +201,11 @@
                 "index": 10,
                 "name": "AirPods Pro",
                 "file": "Apple AirPods Pro"
+            },
+            {
+                "index": 10,
+                "name": "AirPods Pro (2nd generation)",
+                "file": "Apple AirPods Pro (2nd generation)"
             }
         ]
     },
@@ -354,13 +359,17 @@
             },
             {
                 "index": 22,
+                "name": "QuietComfort Earbuds",
+                "file": "Bose QuietComfort Earbuds"
+            },
+            {
+                "index": 22,
                 "name": "QuietComfort Earbuds II",
                 "file": "Bose QuietComfort Earbuds II"
             },
             {
-                "index": 22,
-                "name": "QuietComfort Earbuds",
-                "file": "Bose QuietComfort Earbuds"
+                "name": "QuietComfort Ultra Earbuds",
+                "file": "Bose QuietComfort Ultra Earbuds"
             },
             {
                 "index": 22,
@@ -395,8 +404,14 @@
             {
                 "index": 23,
                 "name": "PI7",
-                "file": ["Bowers & Wilkins PI7", "Bowers & Wilkins Pi7 S2"],
-                "suffix": ["S1", "S2"]
+                "file": [
+                    "Bowers & Wilkins PI7",
+                    "Bowers & Wilkins Pi7 S2"
+                ],
+                "suffix": [
+                    "S1",
+                    "S2"
+                ]
             }
         ]
     },
@@ -475,8 +490,8 @@
         "phones": [
             {
                 "index": 39,
-                "name": "Air Pro 2 2021",
-                "file": "EarFun Air Pro 2 2021"
+                "name": "Air Pro 2 (2021)",
+                "file": "EarFun Air Pro 2 (2021)"
             },
             {
                 "index": 39,
@@ -535,13 +550,13 @@
         "phones": [
             {
                 "index": 44,
-                "name": "Pixel Buds 2017",
-                "file": "Google Pixel Buds 2017"
+                "name": "Pixel Buds (2017)",
+                "file": "Google Pixel Buds (2017)"
             },
             {
                 "index": 44,
-                "name": "Pixel Buds 2020",
-                "file": "Google Pixel Buds 2020"
+                "name": "Pixel Buds (2020)",
+                "file": "Google Pixel Buds (2020)"
             },
             {
                 "index": 44,
@@ -690,6 +705,10 @@
                 "collab": "Under Armor"
             },
             {
+                "name": "Tune Flex",
+                "file": "JBL Tune Flex"
+            },
+            {
                 "index": 50,
                 "name": "Vibe 100TWS",
                 "file": "JBL Vibe 100TWS"
@@ -729,6 +748,10 @@
     {
         "name": "Jabra",
         "phones": [
+            {
+                "name": "Elite 10",
+                "file": "Jabra Elite 10"
+            },
             {
                 "index": 52,
                 "name": "Elite 25e",
@@ -785,6 +808,10 @@
                 "file": "Jabra Elite 75t"
             },
             {
+                "name": "Elite 8 Active",
+                "file": "Jabra Elite 8 Active"
+            },
+            {
                 "index": 52,
                 "name": "Elite 85t",
                 "file": "Jabra Elite 85t"
@@ -826,8 +853,8 @@
             },
             {
                 "index": 53,
-                "name": "Freedom",
-                "file": "Jaybird Freedom"
+                "name": "Freedom F5 (2016)",
+                "file": "Jaybird Freedom F5 (2016)"
             },
             {
                 "index": 53,
@@ -931,8 +958,8 @@
         "phones": [
             {
                 "index": 59,
-                "name": "M6",
-                "file": "MEE Audio M6"
+                "name": "Sport-Fi M6",
+                "file": "MEE Audio Sport-Fi M6"
             },
             {
                 "index": 59,
@@ -981,8 +1008,8 @@
         "phones": [
             {
                 "index": 66,
-                "name": "Aria 2021",
-                "file": "Moondrop Aria 2021"
+                "name": "Aria",
+                "file": "Moondrop Aria"
             },
             {
                 "index": 66,
@@ -1000,14 +1027,18 @@
         "name": "Mpow",
         "phones": [
             {
+                "name": "EM12",
+                "file": "Mpow EM12"
+            },
+            {
                 "index": 68,
                 "name": "Flame Pro",
                 "file": "Mpow Flame Pro"
             },
             {
                 "index": 68,
-                "name": "Jaws",
-                "file": "Mpow Jaws"
+                "name": "Jaws (4.1)",
+                "file": "Mpow Jaws (4.1)"
             },
             {
                 "index": 68,
@@ -1141,8 +1172,8 @@
             },
             {
                 "index": 85,
-                "name": "The Fitness Earbuds",
-                "file": "Raycon The Fitness Earbuds"
+                "name": "The Fitness Earbuds (2021 Edition)",
+                "file": "Raycon The Fitness Earbuds (2021 Edition)"
             }
         ]
     },
@@ -1156,13 +1187,13 @@
             },
             {
                 "index": 86,
-                "name": "Hammerhead True Wireless 2019",
-                "file": "Razer Hammerhead True Wireless 2019"
+                "name": "Hammerhead True Wireless (2019)",
+                "file": "Razer Hammerhead True Wireless (2019)"
             },
             {
                 "index": 86,
-                "name": "Hammerhead True Wireless 2021",
-                "file": "Razer Hammerhead True Wireless 2021"
+                "name": "Hammerhead True Wireless (2021)",
+                "file": "Razer Hammerhead True Wireless (2021)"
             },
             {
                 "index": 86,
@@ -1220,6 +1251,10 @@
                 "file": "Samsung EO-IG955 Type-C"
             },
             {
+                "name": "Galaxy Buds FE",
+                "file": "Samsung Galaxy Buds FE"
+            },
+            {
                 "index": 93,
                 "name": "Galaxy Buds",
                 "file": "Samsung Galaxy Buds"
@@ -1248,6 +1283,19 @@
                 "index": 93,
                 "name": "Galaxy Buds2 Pro",
                 "file": "Samsung Galaxy Buds2 Pro"
+            },
+            {
+                "index": 93,
+                "name": "Gear IconX",
+                "file": "Samsung Gear IconX"
+            },
+            {
+                "name": "Level U Pro",
+                "file": "Samsung Level U Pro"
+            },
+            {
+                "name": "U Flex",
+                "file": "Samsung U Flex"
             }
         ]
     },
@@ -1273,6 +1321,10 @@
                 "index": 94,
                 "name": "CXC-700",
                 "file": "Sennheiser CXC-700"
+            },
+            {
+                "name": "HD1 In-Ear",
+                "file": "Sennheiser HD1 In-Ear"
             },
             {
                 "index": 94,
@@ -1415,6 +1467,10 @@
                 "file": "Skullcandy Sesh"
             },
             {
+                "name": "Smokin Buds",
+                "file": "Skullcandy Smokin Buds"
+            },
+            {
                 "index": 97,
                 "name": "Spoke",
                 "file": "Skullcandy Spoke"
@@ -1458,6 +1514,10 @@
                 "index": 98,
                 "name": "WF-1000XM5",
                 "file": "Sony WF-1000XM5"
+            },
+            {
+                "name": "WF-C500",
+                "file": "Sony WF-C500"
             },
             {
                 "index": 98,
@@ -1653,6 +1713,16 @@
                 "index": 109,
                 "name": "X5",
                 "file": "TREBLAB X5"
+            }
+        ]
+    },
+    {
+        "name": "Truthear",
+        "phones": [
+            {
+                "name": "Zero",
+                "collab": "crinacle",
+                "file": "Truthear x Crinacle Zero"
             }
         ]
     },
