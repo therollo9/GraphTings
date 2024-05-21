@@ -32,27 +32,30 @@ const init_phones = ["Δ Target"],                   // Optional. Which graphs t
       extraUploadEnabled = true,                    // Enable upload function
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 10,                            // Default EQ bands available
-      extraEQBandsMax = 20,                         // Max EQ bands available
-      extraToneGeneratorEnabled = true,             // Enable tone generator function
-      PHONE_BOOK = "rtings_phone_book.json",        // Path to JSON file containing phone metadata
-      default_DF_name = "Δ",                        // Default RAW DF name
-      dfBaseline = true,                            // If true, DF is used as baseline when custom df tilt is on
-      default_bass_shelf = 6,                       // Default Custom DF bass shelf value
-      preference_bounds = "assets/images/bounds.png", // Preference bounds image
-      default_tilt = -1,                            // Default Custom DF tilt value
-      default_ear = 0,                              // Default Custom DF ear gain value
-      default_treble = 0,                           // Default Custom DF treble gain value
-      tiltableTargets = ["Δ", "HMSii.3 Diffuse Field"];         // Targets that are allowed to be tilted
+      extraEQBandsMax = 20;                         // Max EQ bands available
        
 // Specify which targets to display
 const targets = [
-    { type:"Δ",             files:["Δ", "IEF Comp"] },
+    { type:"Δ",             files:["Δ", "JM-1", "IEF Comp"] },
     { type:"Neutral",       files:["HMSii.3 Diffuse Field"] },
     { type:"Reviewer",      files:["IEF Neutral 2023"] },
     { type:"Preference",    files:["Rtings"] }
 ];
 
-
+// Haruto's Addons
+const   preference_bounds_name = "Preference Bounds RAW",    // Preference bounds name
+        preference_bounds_dir = "assets/pref_bounds/",       // Preference bounds directory
+        preference_bounds_startup = false,                   // If true, preference bounds are displayed on startup
+        PHONE_BOOK = "rtings_phone_book.json",               // Path to JSON file containing phone metadata
+        default_DF_name = "Δ",                               // Default RAW DF name
+        dfBaseline = true,                                   // If true, DF is used as baseline when custom df tilt is on
+        default_bass_shelf = 3,                              // Default Custom DF bass shelf value
+        default_tilt = -1,                                   // Default Custom DF tilt value
+        default_ear = 0,                                     // Default Custom DF ear gain value
+        default_treble = 0,                                  // Default Custom DF treble gain value
+        tiltableTargets = ["Δ", "JM-1", "HMSii.3 Diffuse Field"]     // Targets that are allowed to be tilted
+        compTargets = ["Δ", "JM-1", "HMSii.3 Diffuse Field"],                  // Targets that are allowed to be used for compensation
+        allowCreatorSupport = false;                  // Allow the creator to have a button top right to support them
 
 // *************************************************************
 // Functions to support config options set above; probably don't need to change these
@@ -75,11 +78,6 @@ function watermark(svg) {
         wm.append("text")
             .attrs({x:0, y:80, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
             .text(watermark_text);
-    }
-
-    if ( preference_bounds ) {
-        wm.append("image")
-        .attrs({id:'bounds',x:-385, y:-365, width:770, height:770, "xlink:href":preference_bounds, "display":"none"});
     }
 
     // Extra flair

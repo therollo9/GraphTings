@@ -33,26 +33,30 @@ const init_phones = ["HMSii.3 Diffuse Field Target"],                           
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 10,                            // Default EQ bands available
       extraEQBandsMax = 20,                         // Max EQ bands available
-      extraToneGeneratorEnabled = true,             // Enable tone generator function
       num_samples = 5,                              // Number of samples to average for smoothing
-      scale_smoothing = 0.2,                        // Smoothing factor for scale transitions
-      PHONE_BOOK = "rtings_phone_book_hp.json",            // Phone book location
-      default_DF_name = "HMSii.3 Diffuse Field",                        // Default RAW DF name
-      preference_bounds = "assets/images/bounds.png", // Preference bounds image
-      dfBaseline = true,                            // If true, DF is used as baseline when custom df tilt is on
-      default_bass_shelf = 0,                       // Default Custom DF bass shelf value
-      default_tilt = -1,                            // Default Custom DF tilt value
-      default_ear = 0,                              // Default Custom DF ear gain value
-      default_treble = 0,                           // Default Custom DF treble gain value
-      tiltableTargets = ["HMSii.3 Diffuse Field"];         // Targets that are allowed to be tilted
+      scale_smoothing = 0.2;                        // Smoothing factor for scale transitions
 
 
 // Specify which targets to display
 const targets = [
     { type:"Neutral",       files:["HMSii.3 Diffuse Field"] },
-    { type:"Harman",        files:["Harman 2013", "Harman 2018"] },
     { type:"Preference",    files:["Rtings", "Innerfidelity ID"] }
 ];
+
+// Haruto's Addons
+const  preference_bounds_name = "Preference Bounds RAW", // Preference bounds name
+       preference_bounds_dir = "assets/pref_bounds/",    // Preference bounds directory
+       preference_bounds_startup = false,           // If true, preference bounds are displayed on startup
+       PHONE_BOOK = "rtings_phone_book_hp.json",            // Phone book location
+       default_DF_name = "HMSii.3 Diffuse Field",                        // Default RAW DF name
+       dfBaseline = true,                            // If true, DF is used as baseline when custom df tilt is on
+       default_bass_shelf = 0,                       // Default Custom DF bass shelf value
+       default_tilt = -1,                            // Default Custom DF tilt value
+       default_ear = 0,                              // Default Custom DF ear gain value
+       default_treble = 0,                           // Default Custom DF treble gain value
+       tiltableTargets = ["HMSii.3 Diffuse Field"],         // Targets that are allowed to be tilted
+       compTargets = ["HMSii.3 Diffuse Field"],                  // Targets that are allowed to be used for compensation
+       allowCreatorSupport = true;                  // Allow the creator to have a button top right to support them
 
 
 
@@ -77,11 +81,6 @@ function watermark(svg) {
         wm.append("text")
             .attrs({x:0, y:80, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
             .text(watermark_text);
-    }
-
-    if ( preference_bounds ) {
-        wm.append("image")
-        .attrs({id:'bounds',x:-385, y:-365, width:770, height:770, "xlink:href":preference_bounds, "display":"none"});
     }
 
     // Extra flair
