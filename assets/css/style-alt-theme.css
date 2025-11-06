@@ -55,7 +55,7 @@ body.theme-dark {
     --header-menu-icon-color: hsl(0, 0%, 100%);
     
     --logo-filter: invert(1.0);
-    --svg-filter: invert(1);
+    /* --svg-filter: invert(1); */
 }
 
 body.theme-contrast {

@@ -1,0 +1,2621 @@
+[
+    {
+        "name": "AKG",
+        "phones": [
+            {
+                "index": 2,
+                "name": "K240 MKII",
+                "file": "AKG K240 MKII"
+            },
+            {
+                "index": 2,
+                "name": "K371",
+                "file": "AKG K371"
+            },
+            {
+                "index": 2,
+                "name": "K44",
+                "file": "AKG K44"
+            },
+            {
+                "index": 2,
+                "name": "K490-NC",
+                "file": "AKG K490-NC"
+            },
+            {
+                "index": 2,
+                "name": "K701",
+                "file": "AKG K701"
+            },
+            {
+                "index": 2,
+                "name": "K702",
+                "file": "AKG K702"
+            },
+            {
+                "index": 2,
+                "name": "K712 PRO",
+                "file": "AKG K712 PRO"
+            },
+            {
+                "index": 2,
+                "name": "N60NC Wireless",
+                "file": "AKG N60 NC Wireless"
+            },
+            {
+                "index": 2,
+                "name": "N700NC",
+                "file": "AKG N700NC"
+            },
+            {
+                "index": 2,
+                "name": "N700NC M2",
+                "file": "AKG N700NC M2"
+            },
+            {
+                "index": 2,
+                "name": "Q701",
+                "file": "AKG Q701"
+            }
+        ]
+    },
+    {
+        "name": "ASTRO",
+        "phones": [
+            {
+                "index": 3,
+                "name": "Gaming A10 (Gen 2)",
+                "file": "ASTRO Gaming A10 (Gen 2)"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A10",
+                "file": "ASTRO Gaming A10"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A20 (Gen 2)",
+                "file": "ASTRO Gaming A20 (Gen 2)"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A20",
+                "file": "ASTRO Gaming A20"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A30",
+                "file": "ASTRO Gaming A30"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A40 2019",
+                "file": "ASTRO Gaming A40 2019"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A40",
+                "file": "ASTRO Gaming A40"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A50 (Gen 3 2017)",
+                "file": "ASTRO Gaming A50 (Gen 3 2017)"
+            },
+            {
+                "index": 3,
+                "name": "Gaming A50 (Gen 4 2019)",
+                "file": "ASTRO Gaming A50 (Gen 4 2019)"
+            }
+        ]
+    },
+    {
+        "name": "Amazon",
+        "phones": [
+            {
+                "index": 7,
+                "name": "Basics Lightweight On Ear",
+                "file": "AmazonBasics Lightweight On Ear"
+            }
+        ]
+    },
+    {
+        "name": "Anker",
+        "phones": [
+            {
+                "name": "Soundcore Space One",
+                "file": "Anker Soundcore Space One"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Space NC",
+                "file": "Anker SoundCore Space NC"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Life Q20",
+                "file": "Anker Soundcore Life Q20"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Life Q30",
+                "file": "Anker Soundcore Life Q30"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Life Q35",
+                "file": "Anker Soundcore Life Q35"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Space Q45",
+                "file": "Anker Soundcore Space Q45"
+            }
+        ]
+    },
+    {
+        "name": "Apple",
+        "phones": [
+            {
+                "index": 10,
+                "name": "AirPods Max",
+                "file": "Apple AirPods Max"
+            }
+        ]
+    },
+    {
+        "name": "Audeze",
+        "phones": [
+            {
+                "index": 11,
+                "name": "LCD-1",
+                "file": "Audeze LCD-1"
+            },
+            {
+                "index": 11,
+                "name": "LCD-2 Classic",
+                "file": "Audeze LCD-2 Classic"
+            },
+            {
+                "index": 11,
+                "name": "Maxwell",
+                "file": "Audeze Maxwell"
+            },
+            {
+                "index": 11,
+                "name": "Mobius",
+                "file": "Audeze Mobius"
+            },
+            {
+                "index": 11,
+                "name": "Penrose",
+                "file": "Audeze Penrose"
+            }
+        ]
+    },
+    {
+        "name": "Audio-Technica",
+        "phones": [
+            {
+                "index": 12,
+                "name": "ATH-AD700X (2013)",
+                "file": "Audio-Technica ATH-AD700X (2013)"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC27x",
+                "file": "Audio-Technica ATH-ANC27x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC29",
+                "file": "Audio-Technica ATH-ANC29"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC70",
+                "file": "Audio-Technica ATH-ANC70"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC7B SVIS",
+                "file": "Audio-Technica ATH-ANC7B SVIS"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC7b",
+                "file": "Audio-Technica ATH-ANC7b"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC9",
+                "file": "Audio-Technica ATH-ANC9"
+            },
+            {
+                "index": 12,
+                "name": "ATH-DSR9BT",
+                "file": "Audio-Technica ATH-DSR9BT"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M20x",
+                "file": "Audio-Technica ATH-M20x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M30x",
+                "file": "Audio-Technica ATH-M30x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M40x",
+                "file": "Audio-Technica ATH-M40x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M50x",
+                "file": "Audio-Technica ATH-M50x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M50xBT",
+                "file": "Audio-Technica ATH-M50xBT"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M50xBT2",
+                "file": "Audio-Technica ATH-M50xBT2"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M60x",
+                "file": "Audio-Technica ATH-M60x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-M70x",
+                "file": "Audio-Technica ATH-M70x"
+            },
+            {
+                "index": 12,
+                "name": "ATH-MSR7NC",
+                "file": "Audio-Technica ATH-MSR7NC"
+            },
+            {
+                "index": 12,
+                "name": "ATH-R70x",
+                "file": "Audio-Technica ATH-R70x"
+            }
+        ]
+    },
+    {
+        "name": "Avantree",
+        "phones": [
+            {
+                "index": 13,
+                "name": "HT5009",
+                "file": "Avantree HT5009"
+            }
+        ]
+    },
+    {
+        "name": "Bang & Olufsen",
+        "phones": [
+            {
+                "index": 15,
+                "name": "Beoplay H6 (2nd Gen)",
+                "file": "Bang & Olufsen Beoplay H6 (2nd Gen)"
+            },
+            {
+                "index": 15,
+                "name": "Beoplay H9 (Gen 1)",
+                "file": "Bang & Olufsen Beoplay H9 (Gen 1)"
+            },
+            {
+                "index": 15,
+                "name": "Beoplay H9i",
+                "file": "Bang & Olufsen Beoplay H9i"
+            },
+            {
+                "index": 15,
+                "name": "Beoplay Portal",
+                "file": "Bang & Olufsen Beoplay Portal"
+            }
+        ]
+    },
+    {
+        "name": "Beats",
+        "phones": [
+            {
+                "index": 16,
+                "name": "EP On-Ear",
+                "file": "Beats EP On-Ear"
+            },
+            {
+                "index": 16,
+                "name": "Executive",
+                "file": "Beats Executive"
+            },
+            {
+                "index": 16,
+                "name": "Solo Pro",
+                "file": "Beats Solo Pro"
+            },
+            {
+                "index": 16,
+                "name": "Solo2 Wireless",
+                "file": "Beats Solo2 Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Solo3 2018 Wireless",
+                "file": "Beats Solo3 2018 Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Solo3 2019 Wireless",
+                "file": "Beats Solo3 2019 Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Studio Pro",
+                "file": "Beats Studio Pro"
+            },
+            {
+                "index": 16,
+                "name": "Studio Wireless",
+                "file": "Beats Studio Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Studio3 Wireless",
+                "file": "Beats Studio3 Wireless"
+            }
+        ]
+    },
+    {
+        "name": "Beyerdynamic",
+        "phones": [
+            {
+                "index": 18,
+                "name": "Amiron Wireless",
+                "file": "Beyerdynamic Amiron Wireless"
+            },
+            {
+                "index": 18,
+                "name": "DT 1770 (velour earpads)",
+                "file": "Beyerdynamic DT 1770 (velour earpads)"
+            },
+            {
+                "index": 18,
+                "name": "DT 1990 (balanced earpads)",
+                "file": "Beyerdynamic DT 1990 (balanced earpads)"
+            },
+            {
+                "index": 18,
+                "name": "DT 700 Pro X",
+                "file": "Beyerdynamic DT 700 Pro X"
+            },
+            {
+                "index": 18,
+                "name": "DT 770 250 Ohm",
+                "file": "Beyerdynamic DT 770 Pro"
+            },
+            {
+                "index": 18,
+                "name": "DT 880 32 Ohm",
+                "file": "Beyerdynamic DT 880"
+            },
+            {
+                "index": 18,
+                "name": "DT 900 Pro X",
+                "file": "Beyerdynamic DT 900 Pro X"
+            },
+            {
+                "index": 18,
+                "name": "DT 990 Pro 250 Ohm",
+                "file": "Beyerdynamic DT 990 Pro"
+            },
+            {
+                "index": 18,
+                "name": "T1 (2nd Gen)",
+                "file": "Beyerdynamic T1 (2nd Gen)"
+            }
+        ]
+    },
+    {
+        "name": "BlueParrott",
+        "phones": [
+            {
+                "name": "B450-XT",
+                "file": "BlueParrott B450-XT"
+            }
+        ]
+    },
+    {
+        "name": "Bluedio",
+        "phones": [
+            {
+                "index": 20,
+                "name": "T2S Turbine",
+                "file": "Bluedio T2S"
+            },
+            {
+                "index": 20,
+                "name": "T3 Plus",
+                "file": "Bluedio T3 Plus"
+            },
+            {
+                "index": 20,
+                "name": "T4",
+                "file": "Bluedio T4 Turbine"
+            },
+            {
+                "index": 20,
+                "name": "U Plus",
+                "file": "Bluedio U Plus"
+            }
+        ]
+    },
+    {
+        "name": "Bose",
+        "phones": [
+            {
+                "index": 22,
+                "name": "Noise Cancelling Headphones 700",
+                "file": "Bose Noise Cancelling Headphones 700"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 20",
+                "file": "Bose QuietComfort 20"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 25",
+                "file": "Bose QuietComfort 25"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 35 II Gaming Headset\u200b",
+                "file": "Bose QuietComfort 35 II Gaming Headset\u200b"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 35 II",
+                "file": "Bose QuietComfort 35 II"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 35",
+                "file": "Bose QuietComfort 35"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 45",
+                "file": "Bose QuietComfort 45"
+            },
+            {
+                "name": "QuietComfort Ultra Headphones",
+                "file": "Bose QuietComfort Ultra Headphones"
+            },
+            {
+                "index": 22,
+                "name": "QuietControl 30",
+                "file": "Bose QuietControl 30"
+            },
+            {
+                "index": 22,
+                "name": "SoundLink Around-Ear II",
+                "file": "Bose SoundLink Around-Ear II"
+            },
+            {
+                "index": 22,
+                "name": "SoundLink On-Ear",
+                "file": "Bose SoundLink On-Ear"
+            },
+            {
+                "index": 22,
+                "name": "SoundTrue Around-Ear II",
+                "file": "Bose SoundTrue Around-Ear II"
+            }
+        ]
+    },
+    {
+        "name": "Bowers & Wilkins",
+        "phones": [
+            {
+                "index": 23,
+                "name": "P5 Series 2",
+                "file": "Bowers & Wilkins P5 Series 2"
+            },
+            {
+                "index": 23,
+                "name": "P5 Wireless",
+                "file": "Bowers & Wilkins P5 Wireless"
+            },
+            {
+                "index": 23,
+                "name": "P7",
+                "file": "Bowers & Wilkins P7"
+            },
+            {
+                "index": 23,
+                "name": "PX",
+                "file": "Bowers & Wilkins PX"
+            },
+            {
+                "index": 23,
+                "name": "PX5",
+                "file": "Bowers & Wilkins PX5"
+            },
+            {
+                "index": 23,
+                "name": "PX7",
+                "file": "Bowers & Wilkins PX7"
+            },
+            {
+                "index": 23,
+                "name": "Px7 S2",
+                "file": "Bowers & Wilkins Px7 S2"
+            },
+            {
+                "index": 23,
+                "name": "Px8",
+                "file": "Bowers & Wilkins Px8"
+            }
+        ]
+    },
+    {
+        "name": "Brainwavz",
+        "phones": [
+            {
+                "index": 24,
+                "name": "HM5",
+                "file": "Brainwavz HM5"
+            }
+        ]
+    },
+    {
+        "name": "B\u00d6HM",
+        "phones": [
+            {
+                "index": 25,
+                "name": "B-66",
+                "file": "B\u00d6HM B-66"
+            }
+        ]
+    },
+    {
+        "name": "Cooler Master",
+        "phones": [
+            {
+                "index": 27,
+                "name": "MH630",
+                "file": "Cooler Master MH630"
+            },
+            {
+                "index": 27,
+                "name": "MH751",
+                "file": "Cooler Master MH751"
+            }
+        ]
+    },
+    {
+        "name": "Corsair",
+        "phones": [
+            {
+                "index": 28,
+                "name": "HS35",
+                "file": "Corsair HS35"
+            },
+            {
+                "index": 28,
+                "name": "HS50",
+                "file": "Corsair HS50"
+            },
+            {
+                "index": 28,
+                "name": "HS60 HAPTIC",
+                "file": "Corsair HS60 HAPTIC"
+            },
+            {
+                "index": 28,
+                "name": "HS60",
+                "file": "Corsair HS60"
+            },
+            {
+                "index": 28,
+                "name": "HS60 PRO SURROUND",
+                "file": "Corsair HS60 PRO SURROUND"
+            },
+            {
+                "index": 28,
+                "name": "HS70 Bluetooth",
+                "file": "Corsair HS70 Bluetooth"
+            },
+            {
+                "index": 28,
+                "name": "HS70 Wireless",
+                "file": "Corsair HS70 Wireless"
+            },
+            {
+                "index": 28,
+                "name": "HS75 XB WIRELESS",
+                "file": "Corsair HS75 XB WIRELESS"
+            },
+            {
+                "index": 28,
+                "name": "HS80 MAX WIRELESS",
+                "file": "Corsair HS80 MAX WIRELESS"
+            },
+            {
+                "index": 28,
+                "name": "HS80 RGB WIRELESS",
+                "file": "Corsair HS80 RGB WIRELESS"
+            },
+            {
+                "index": 28,
+                "name": "VIRTUOSO RGB Wireless XT",
+                "file": "Corsair VIRTUOSO RGB Wireless XT"
+            },
+            {
+                "index": 28,
+                "name": "Virtuoso RGB Wireless SE",
+                "file": "Corsair Virtuoso RGB Wireless SE"
+            },
+            {
+                "index": 28,
+                "name": "Void Elite",
+                "file": "Corsair Void Elite"
+            },
+            {
+                "index": 28,
+                "name": "Void PRO RGB",
+                "file": "Corsair Void PRO RGB"
+            }
+        ]
+    },
+    {
+        "name": "Cougar",
+        "phones": [
+            {
+                "index": 29,
+                "name": "Immersa",
+                "file": "Cougar Immersa"
+            }
+        ]
+    },
+    {
+        "name": "Cowin",
+        "phones": [
+            {
+                "index": 30,
+                "name": "E7",
+                "file": "Cowin E7"
+            },
+            {
+                "index": 30,
+                "name": "E7 Pro",
+                "file": "Cowin E7 Pro"
+            },
+            {
+                "index": 30,
+                "name": "E8",
+                "file": "Cowin E8"
+            },
+            {
+                "index": 30,
+                "name": "SE7",
+                "file": "Cowin SE7"
+            }
+        ]
+    },
+    {
+        "name": "Creative",
+        "phones": [
+            {
+                "index": 31,
+                "name": "Aurvana Gold",
+                "file": "Creative Aurvana Gold"
+            },
+            {
+                "index": 31,
+                "name": "Aurvana Platinum",
+                "file": "Creative Aurvana Platinum"
+            },
+            {
+                "index": 31,
+                "name": "HN-900",
+                "file": "Creative HN-900"
+            },
+            {
+                "index": 31,
+                "name": "SXFI Air",
+                "file": "Creative SXFI Air"
+            },
+            {
+                "index": 31,
+                "name": "Sound Blaster EVO ZxR",
+                "file": "Creative Sound Blaster EVO ZxR"
+            },
+            {
+                "index": 31,
+                "name": "Sound BlasterX H5",
+                "file": "Creative Sound BlasterX H5"
+            }
+        ]
+    },
+    {
+        "name": "Denon",
+        "phones": [
+            {
+                "index": 32,
+                "name": "AHGC20 Globe Cruiser",
+                "file": "Denon AHGC20 Globe Cruiser"
+            }
+        ]
+    },
+    {
+        "name": "Diskin",
+        "phones": [
+            {
+                "index": 33,
+                "name": "DH3 Wireless",
+                "file": "Diskin DH3"
+            }
+        ]
+    },
+    {
+        "name": "Dolby",
+        "phones": [
+            {
+                "index": 34,
+                "name": "Dimension Wireless",
+                "file": "Dolby Dimension"
+            }
+        ]
+    },
+    {
+        "name": "Drop",
+        "phones": [
+            {
+                "index": 35,
+                "name": "Panda",
+                "file": "Drop Panda"
+            }
+        ]
+    },
+    {
+        "name": "Dyson",
+        "phones": [
+            {
+                "index": 36,
+                "name": "Zone",
+                "file": "Dyson Zone"
+            }
+        ]
+    },
+    {
+        "name": "EPOS",
+        "phones": [
+            {
+                "index": 38,
+                "name": "Sennheiser GSP 600",
+                "file": "EPOS Sennheiser GSP 600"
+            }
+        ]
+    },
+    {
+        "name": "Focal",
+        "phones": [
+            {
+                "index": 43,
+                "name": "Bathys",
+                "file": "Focal Bathys"
+            },
+            {
+                "index": 43,
+                "name": "Celestee",
+                "file": "Focal Celestee"
+            },
+            {
+                "index": 43,
+                "name": "Clear Mg",
+                "file": "Focal Clear Mg"
+            },
+            {
+                "index": 43,
+                "name": "Elear",
+                "file": "Focal Elear"
+            },
+            {
+                "index": 43,
+                "name": "Elegia",
+                "file": "Focal Elegia"
+            },
+            {
+                "index": 43,
+                "name": "Stellia",
+                "file": "Focal Stellia"
+            }
+        ]
+    },
+    {
+        "name": "Grado",
+        "phones": [
+            {
+                "index": 45,
+                "name": "GW100",
+                "file": "Grado GW100"
+            },
+            {
+                "index": 45,
+                "name": "SR125e",
+                "file": "Grado SR125e"
+            },
+            {
+                "index": 45,
+                "name": "SR225e",
+                "file": "Grado SR225e"
+            },
+            {
+                "index": 45,
+                "name": "SR325e",
+                "file": "Grado SR325e"
+            },
+            {
+                "index": 45,
+                "name": "SR60e",
+                "file": "Grado SR60e"
+            },
+            {
+                "index": 45,
+                "name": "SR80e",
+                "file": "Grado SR80e"
+            },
+            {
+                "index": 45,
+                "name": "The Hemp Headphone",
+                "file": "Grado The Hemp Headphone"
+            }
+        ]
+    },
+    {
+        "name": "HIFIMAN",
+        "phones": [
+            {
+                "index": 46,
+                "name": "Ananda BT",
+                "file": "HIFIMAN Ananda BT"
+            },
+            {
+                "index": 46,
+                "name": "Ananda",
+                "file": "HIFIMAN Ananda"
+            },
+            {
+                "index": 46,
+                "name": "Arya",
+                "file": "HIFIMAN Arya"
+            },
+            {
+                "index": 46,
+                "name": "Arya Stealth",
+                "file": "HIFIMAN Arya Stealth Magnet Version"
+            },
+            {
+                "index": 46,
+                "name": "Edition X",
+                "file": "HIFIMAN Edition X"
+            },
+            {
+                "index": 46,
+                "name": "Edition XS",
+                "file": "HIFIMAN Edition XS"
+            },
+            {
+                "index": 46,
+                "name": "HE400i",
+                "file": "HIFIMAN HE400i"
+            },
+            {
+                "index": 46,
+                "name": "HE400se",
+                "file": "HIFIMAN HE400se"
+            },
+            {
+                "index": 46,
+                "name": "Sundara",
+                "file": "HIFIMAN Sundara (pre-2020 earpads)"
+            },
+            {
+                "index": 46,
+                "name": "Sundara 2020",
+                "file": "HIFIMAN Sundara (post-2020 earpads)"
+            }
+        ]
+    },
+    {
+        "name": "Harman Kardon",
+        "phones": [
+            {
+                "index": 47,
+                "name": "NC",
+                "file": "Harman Kardon NC"
+            }
+        ]
+    },
+    {
+        "name": "HyperX",
+        "phones": [
+            {
+                "index": 48,
+                "name": "Cloud Alpha",
+                "file": "HyperX Cloud Alpha"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Alpha S",
+                "file": "HyperX Cloud Alpha S"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Alpha Wireless",
+                "file": "HyperX Cloud Alpha Wireless"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Core",
+                "file": "HyperX Cloud Core"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Flight",
+                "file": "HyperX Cloud Flight"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Flight S",
+                "file": "HyperX Cloud Flight S"
+            },
+            {
+                "index": 48,
+                "name": "Cloud II",
+                "file": "HyperX Cloud II"
+            },
+            {
+                "index": 48,
+                "name": "Cloud II Wireless",
+                "file": "HyperX Cloud II Wireless"
+            },
+            {
+                "index": 48,
+                "name": "Cloud III",
+                "file": "HyperX Cloud III"
+            },
+            {
+                "index": 48,
+                "name": "Cloud III Wireless",
+                "file": "HyperX Cloud III Wireless"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Mix",
+                "file": "HyperX Cloud Mix"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Revolver + 7.1",
+                "file": "HyperX Cloud Revolver + 7.1"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Revolver",
+                "file": "HyperX Cloud Revolver"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Stinger 2",
+                "file": "HyperX Cloud Stinger 2"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Stinger",
+                "file": "HyperX Cloud Stinger"
+            },
+            {
+                "index": 48,
+                "name": "Cloud Stinger S",
+                "file": "HyperX Cloud Stinger S"
+            }
+        ]
+    },
+    {
+        "name": "Insignia",
+        "phones": [
+            {
+                "index": 49,
+                "name": "Digital Wireless Headphones",
+                "file": "Insignia Digital Wireless Headphones"
+            }
+        ]
+    },
+    {
+        "name": "JBL",
+        "phones": [
+            {
+                "index": 50,
+                "name": "CLUB 700BT",
+                "file": "JBL CLUB 700BT"
+            },
+            {
+                "index": 50,
+                "name": "CLUB 950NC",
+                "file": "JBL CLUB 950NC"
+            },
+            {
+                "index": 50,
+                "name": "CLUB ONE",
+                "file": "JBL CLUB ONE"
+            },
+            {
+                "index": 50,
+                "name": "E45BT",
+                "file": "JBL E45BT"
+            },
+            {
+                "index": 50,
+                "name": "Synchros E50BT",
+                "file": "JBL Synchros E50BT"
+            },
+            {
+                "index": 50,
+                "name": "E55BT",
+                "file": "JBL E55BT"
+            },
+            {
+                "index": 50,
+                "name": "E65BTNC",
+                "file": "JBL E65BTNC"
+            },
+            {
+                "index": 50,
+                "name": "Everest 310",
+                "file": "JBL Everest 310"
+            },
+            {
+                "index": 50,
+                "name": "Everest 710",
+                "file": "JBL Everest 710"
+            },
+            {
+                "index": 50,
+                "name": "Everest Elite 700",
+                "file": "JBL Everest Elite 700"
+            },
+            {
+                "index": 50,
+                "name": "JR300BT",
+                "file": "JBL JR300BT"
+            },
+            {
+                "index": 50,
+                "name": "Live 400BT",
+                "file": "JBL Live 400BT"
+            },
+            {
+                "index": 50,
+                "name": "Live 460NC",
+                "file": "JBL Live 460NC"
+            },
+            {
+                "index": 50,
+                "name": "Live 500BT",
+                "file": "JBL Live 500BT"
+            },
+            {
+                "index": 50,
+                "name": "Live 650BTNC",
+                "file": "JBL Live 650BTNC"
+            },
+            {
+                "index": 50,
+                "name": "Live 660NC",
+                "file": "JBL Live 660NC"
+            },
+            {
+                "index": 50,
+                "name": "Quantum 100",
+                "file": "JBL Quantum 100"
+            },
+            {
+                "index": 50,
+                "name": "Quantum 400",
+                "file": "JBL Quantum 400"
+            },
+            {
+                "index": 50,
+                "name": "Quantum 800",
+                "file": "JBL Quantum 800"
+            },
+            {
+                "index": 50,
+                "name": "Quantum ONE",
+                "file": "JBL Quantum ONE"
+            },
+            {
+                "index": 50,
+                "name": "T450BT",
+                "file": "JBL T450BT"
+            },
+            {
+                "index": 50,
+                "name": "TUNE 750BTNC",
+                "file": "JBL TUNE 750BTNC"
+            },
+            {
+                "index": 50,
+                "name": "Tour One",
+                "file": "JBL Tour One"
+            },
+            {
+                "index": 50,
+                "name": "Tune 510BT",
+                "file": "JBL Tune 510BT"
+            },
+            {
+                "index": 50,
+                "name": "Tune 660NC",
+                "file": "JBL Tune 660NC"
+            },
+            {
+                "index": 50,
+                "name": "Tune 760NC",
+                "file": "JBL Tune 760NC"
+            }
+        ]
+    },
+    {
+        "name": "Jabra",
+        "phones": [
+            {
+                "index": 52,
+                "name": "Elite 85h",
+                "file": "Jabra Elite 85h"
+            },
+            {
+                "index": 52,
+                "name": "Evolve2 65",
+                "file": "Jabra Evolve2 65"
+            },
+            {
+                "index": 52,
+                "name": "Evolve2 85",
+                "file": "Jabra Evolve2 85"
+            }
+        ]
+    },
+    {
+        "name": "Koss",
+        "phones": [
+            {
+                "index": 56,
+                "name": "KSC75",
+                "file": "Koss KSC75"
+            },
+            {
+                "index": 56,
+                "name": "Porta Pro KTC",
+                "file": "Koss Porta Pro KTC"
+            },
+            {
+                "index": 56,
+                "name": "Porta Pro Wireless",
+                "file": "Koss Porta Pro Wireless"
+            },
+            {
+                "index": 56,
+                "name": "QZ900",
+                "file": "Koss QZ900"
+            },
+            {
+                "index": 56,
+                "name": "QZPro",
+                "file": "Koss QZPro"
+            },
+            {
+                "index": 56,
+                "name": "UR20",
+                "file": "Koss UR20"
+            }
+        ]
+    },
+    {
+        "name": "Logitech",
+        "phones": [
+            {
+                "index": 57,
+                "name": "G PRO X 2 Lightspeed",
+                "file": "Logitech G PRO X 2 Lightspeed"
+            },
+            {
+                "index": 57,
+                "name": "G Pro",
+                "file": "Logitech G Pro Gaming Headset"
+            },
+            {
+                "index": 57,
+                "name": "G Pro X",
+                "file": "Logitech G Pro X Gaming Headset"
+            },
+            {
+                "index": 57,
+                "name": "G PRO X WIRELESS LIGHTSPEED",
+                "file": "Logitech G Pro X Lightspeed"
+            },
+            {
+                "index": 57,
+                "name": "G335",
+                "file": "Logitech G335"
+            },
+            {
+                "index": 57,
+                "name": "G430",
+                "file": "Logitech G430"
+            },
+            {
+                "index": 57,
+                "name": "G432",
+                "file": "Logitech G432"
+            },
+            {
+                "index": 57,
+                "name": "G433",
+                "file": "Logitech G433"
+            },
+            {
+                "index": 57,
+                "name": "G435 LIGHTSPEED",
+                "file": "Logitech G435 LIGHTSPEED"
+            },
+            {
+                "index": 57,
+                "name": "G533",
+                "file": "Logitech G533"
+            },
+            {
+                "index": 57,
+                "name": "G535 LIGHTSPEED",
+                "file": "Logitech G535 LIGHTSPEED"
+            },
+            {
+                "index": 57,
+                "name": "G635",
+                "file": "Logitech G635"
+            },
+            {
+                "index": 57,
+                "name": "G733 LIGHTSPEED",
+                "file": "Logitech G733 LIGHTSPEED"
+            },
+            {
+                "index": 57,
+                "name": "G735",
+                "file": "Logitech G735"
+            },
+            {
+                "index": 57,
+                "name": "G930",
+                "file": "Logitech G930"
+            },
+            {
+                "index": 57,
+                "name": "G933",
+                "file": "Logitech G933"
+            },
+            {
+                "index": 57,
+                "name": "G935",
+                "file": "Logitech G935"
+            },
+            {
+                "index": 57,
+                "name": "Zone Wired",
+                "file": "Logitech Zone Wired"
+            }
+        ]
+    },
+    {
+        "name": "LucidSound",
+        "phones": [
+            {
+                "index": 58,
+                "name": "LS31",
+                "file": "LucidSound LS31"
+            }
+        ]
+    },
+    {
+        "name": "Marshall",
+        "phones": [
+            {
+                "index": 60,
+                "name": "MID ANC",
+                "file": "Marshall MID ANC"
+            },
+            {
+                "index": 60,
+                "name": "Major II",
+                "file": "Marshall Major II"
+            }
+        ]
+    },
+    {
+        "name": "Meze",
+        "phones": [
+            {
+                "index": 61,
+                "name": "Empyrean",
+                "file": "Meze Empyrean"
+            }
+        ]
+    },
+    {
+        "name": "Microsoft",
+        "phones": [
+            {
+                "index": 62,
+                "name": "Surface Headphones 2",
+                "file": "Microsoft Surface Headphones 2"
+            },
+            {
+                "index": 62,
+                "name": "Surface Headphones",
+                "file": "Microsoft Surface Headphones"
+            }
+        ]
+    },
+    {
+        "name": "Mixcder",
+        "phones": [
+            {
+                "index": 63,
+                "name": "E9",
+                "file": "Mixcder E9"
+            }
+        ]
+    },
+    {
+        "name": "Monoprice",
+        "phones": [
+            {
+                "index": 64,
+                "name": "110010/Noise Cancelling",
+                "file": "Monoprice 110010"
+            }
+        ]
+    },
+    {
+        "name": "Monster",
+        "phones": [
+            {
+                "index": 65,
+                "name": "Inspiration",
+                "file": "Monster Inspiration"
+            }
+        ]
+    },
+    {
+        "name": "Motorola",
+        "phones": [
+            {
+                "index": 67,
+                "name": "Squads 200",
+                "file": "Motorola Squads 200"
+            }
+        ]
+    },
+    {
+        "name": "Mpow",
+        "phones": [
+            {
+                "index": 68,
+                "name": "059 Bluetooth Over-Ear",
+                "file": "Mpow 059"
+            },
+            {
+                "index": 68,
+                "name": "CH1",
+                "file": "Mpow CH1"
+            },
+            {
+                "index": 68,
+                "name": "CH6",
+                "file": "Mpow CH6"
+            },
+            {
+                "index": 68,
+                "name": "CH9",
+                "file": "Mpow CH9"
+            },
+            {
+                "index": 68,
+                "name": "H10",
+                "file": "Mpow H10"
+            },
+            {
+                "index": 68,
+                "name": "H5",
+                "file": "Mpow H5"
+            },
+            {
+                "name": "Pro Trucker",
+                "file": "Mpow Pro Trucker"
+            }
+        ]
+    },
+    {
+        "name": "NAD",
+        "phones": [
+            {
+                "index": 69,
+                "name": "VISO HP50",
+                "file": "NAD VISO HP50"
+            }
+        ]
+    },
+    {
+        "name": "Noontec",
+        "phones": [
+            {
+                "index": 70,
+                "name": "Hammo Go",
+                "file": "Noontec Hammo Go"
+            }
+        ]
+    },
+    {
+        "name": "Nura",
+        "phones": [
+            {
+                "index": 72,
+                "name": "Nuraphone",
+                "file": "Nura Nuraphone"
+            }
+        ]
+    },
+    {
+        "name": "Oppo",
+        "phones": [
+            {
+                "index": 74,
+                "name": "PM3",
+                "file": "Oppo PM3"
+            }
+        ]
+    },
+    {
+        "name": "Panasonic",
+        "phones": [
+            {
+                "index": 75,
+                "name": "RP-HC101",
+                "file": "Panasonic RP-HC101"
+            },
+            {
+                "index": 75,
+                "name": "RP-HC200",
+                "file": "Panasonic RP-HC200"
+            },
+            {
+                "index": 75,
+                "name": "RP-HC800",
+                "file": "Panasonic RP-HC800"
+            }
+        ]
+    },
+    {
+        "name": "Parrot",
+        "phones": [
+            {
+                "index": 76,
+                "name": "Zik 2.0",
+                "file": "Parrot Zik 2.0"
+            },
+            {
+                "index": 76,
+                "name": "Zik 3.0",
+                "file": "Parrot Zik 3.0"
+            }
+        ]
+    },
+    {
+        "name": "Philips",
+        "phones": [
+            {
+                "index": 77,
+                "name": "Fidelio NC1",
+                "file": "Philips Fidelio NC1"
+            },
+            {
+                "index": 77,
+                "name": "Fidelio X2HR",
+                "file": "Philips Fidelio X2HR"
+            },
+            {
+                "index": 77,
+                "name": "Fidelio X3",
+                "file": "Philips Fidelio X3"
+            },
+            {
+                "index": 77,
+                "name": "SHP9500",
+                "file": "Philips SHP9500"
+            },
+            {
+                "index": 77,
+                "name": "SHP9600",
+                "file": "Philips SHP9600"
+            }
+        ]
+    },
+    {
+        "name": "Plane Quiet",
+        "phones": [
+            {
+                "index": 78,
+                "name": "Platinum",
+                "file": "Plane Quiet Platinum"
+            }
+        ]
+    },
+    {
+        "name": "Plantronics",
+        "phones": [
+            {
+                "index": 79,
+                "name": "BackBeat Go 600",
+                "file": "Plantronics BackBeat Go 600"
+            },
+            {
+                "index": 79,
+                "name": "BackBeat Pro 2",
+                "file": "Plantronics BackBeat Pro 2"
+            },
+            {
+                "index": 79,
+                "name": "Backbeat Go 810",
+                "file": "Plantronics Backbeat Go 810"
+            },
+            {
+                "index": 79,
+                "name": "Backbeat Pro",
+                "file": "Plantronics Backbeat Pro"
+            },
+            {
+                "index": 79,
+                "name": "RIG 800LX",
+                "file": "Plantronics RIG 800LX"
+            }
+        ]
+    },
+    {
+        "name": "Polk Audio",
+        "phones": [
+            {
+                "index": 80,
+                "name": "Buckle",
+                "file": "Polk Audio Buckle"
+            },
+            {
+                "index": 80,
+                "name": "UltraFocus 8000",
+                "file": "Polk Audio UltraFocus 8000"
+            }
+        ]
+    },
+    {
+        "name": "Puro",
+        "phones": [
+            {
+                "index": 81,
+                "name": "JuniorJams",
+                "file": "Puro JuniorJams"
+            }
+        ]
+    },
+    {
+        "name": "ROCCAT",
+        "phones": [
+            {
+                "index": 83,
+                "name": "Elo 7.1 Air",
+                "file": "ROCCAT Elo 7.1 Air"
+            },
+            {
+                "index": 83,
+                "name": "Syn Pro Air",
+                "file": "ROCCAT Syn Pro Air"
+            }
+        ]
+    },
+    {
+        "name": "RUNMUS",
+        "phones": [
+            {
+                "index": 84,
+                "name": "RGB K1 Gaming Headset",
+                "file": "RUNMUS RGB K1 Gaming Headset"
+            }
+        ]
+    },
+    {
+        "name": "Razer",
+        "phones": [
+            {
+                "index": 86,
+                "name": "Barracuda",
+                "file": "Razer Barracuda"
+            },
+            {
+                "index": 86,
+                "name": "Barracuda Pro",
+                "file": "Razer Barracuda Pro"
+            },
+            {
+                "index": 86,
+                "name": "Barracuda X (2021)",
+                "file": "Razer Barracuda X (2021)"
+            },
+            {
+                "index": 86,
+                "name": "BlackShark V2",
+                "file": "Razer BlackShark V2"
+            },
+            {
+                "index": 86,
+                "name": "BlackShark V2 Pro 2023",
+                "file": "Razer BlackShark V2 Pro 2023"
+            },
+            {
+                "index": 86,
+                "name": "BlackShark V2 Pro",
+                "file": "Razer BlackShark V2 Pro"
+            },
+            {
+                "index": 86,
+                "name": "BlackShark V2 X",
+                "file": "Razer BlackShark V2 X"
+            },
+            {
+                "name": "BlackShark V2 HyperSpeed",
+                "file": "Razer BlackShark V2 HyperSpeed"
+            },
+            {
+                "index": 86,
+                "name": "Kaira Pro Wireless",
+                "file": "Razer Kaira Pro"
+            },
+            {
+                "index": 86,
+                "name": "Kaira X",
+                "file": "Razer Kaira X for PlayStation"
+            },
+            {
+                "index": 86,
+                "name": "Kraken Pro V2",
+                "file": "Razer Kraken Pro V2"
+            },
+            {
+                "index": 86,
+                "name": "Kraken Tournament Edition",
+                "file": "Razer Kraken Tournament Edition"
+            },
+            {
+                "index": 86,
+                "name": "Kraken USB",
+                "file": "Razer Kraken USB"
+            },
+            {
+                "index": 86,
+                "name": "Kraken Ultimate",
+                "file": "Razer Kraken Ultimate"
+            },
+            {
+                "index": 86,
+                "name": "Kraken V3 HyperSense",
+                "file": "Razer Kraken V3 HyperSense"
+            },
+            {
+                "index": 86,
+                "name": "Kraken V3",
+                "file": "Razer Kraken V3"
+            },
+            {
+                "index": 86,
+                "name": "Kraken V3 Pro",
+                "file": "Razer Kraken V3 Pro"
+            },
+            {
+                "index": 86,
+                "name": "Kraken V3 X",
+                "file": "Razer Kraken V3 X"
+            },
+            {
+                "index": 86,
+                "name": "Kraken X",
+                "file": "Razer Kraken X"
+            },
+            {
+                "index": 86,
+                "name": "Man O' War",
+                "file": "Razer Man O' War"
+            },
+            {
+                "index": 86,
+                "name": "Nari Ultimate",
+                "file": "Razer Nari Ultimate"
+            },
+            {
+                "index": 86,
+                "name": "Opus 2020",
+                "file": "Razer Opus 2020"
+            },
+            {
+                "index": 86,
+                "name": "Opus 2021",
+                "file": "Razer Opus 2021"
+            },
+            {
+                "index": 86,
+                "name": "Opus X",
+                "file": "Razer Opus X"
+            }
+        ]
+    },
+    {
+        "name": "R\u00d8DE",
+        "phones": [
+            {
+                "index": 88,
+                "name": "NTH-100M",
+                "file": "R\u00d8DE NTH-100M"
+            }
+        ]
+    },
+    {
+        "name": "SMS Audio",
+        "phones": [
+            {
+                "index": 90,
+                "name": "Street by 50 Cent",
+                "file": "SMS Audio Street by 50 Cent"
+            }
+        ]
+    },
+    {
+        "name": "Samson",
+        "phones": [
+            {
+                "index": 92,
+                "name": "SR850",
+                "file": "Samson SR850"
+            }
+        ]
+    },
+    {
+        "name": "Samsung",
+        "phones": [
+            {
+                "index": 93,
+                "name": "Level On Wireless",
+                "file": "Samsung Level On Wireless"
+            },
+            {
+                "index": 93,
+                "name": "Level Over Wireless",
+                "file": "Samsung Level Over Wireless"
+            }
+        ]
+    },
+    {
+        "name": "Sennheiser",
+        "phones": [
+            {
+                "index": 94,
+                "name": "CX 400BT",
+                "file": "Sennheiser CX 400BT"
+            },
+            {
+                "index": 94,
+                "name": "GAME ONE",
+                "file": "Sennheiser GAME ONE"
+            },
+            {
+                "index": 94,
+                "name": "HD 201",
+                "file": "Sennheiser HD 201"
+            },
+            {
+                "index": 94,
+                "name": "HD 202 II",
+                "file": "Sennheiser HD 202 II"
+            },
+            {
+                "index": 94,
+                "name": "HD 280 Pro",
+                "file": "Sennheiser HD 280 Pro"
+            },
+            {
+                "index": 94,
+                "name": "HD 4.40BT",
+                "file": "Sennheiser HD 4.40BT"
+            },
+            {
+                "index": 94,
+                "name": "HD 4.50 BTNC",
+                "file": "Sennheiser HD 4.50 BTNC"
+            },
+            {
+                "index": 94,
+                "name": "HD 4.50",
+                "file": "Sennheiser HD 4.50"
+            },
+            {
+                "index": 94,
+                "name": "HD 450BT",
+                "file": "Sennheiser HD 450BT"
+            },
+            {
+                "index": 94,
+                "name": "HD 518",
+                "file": "Sennheiser HD 518"
+            },
+            {
+                "index": 94,
+                "name": "HD 560S",
+                "file": "Sennheiser HD 560S"
+            },
+            {
+                "index": 94,
+                "name": "HD 58X",
+                "file": "Sennheiser HD 58X"
+            },
+            {
+                "index": 94,
+                "name": "HD 598 CS",
+                "file": "Sennheiser HD 598 CS"
+            },
+            {
+                "index": 94,
+                "name": "HD 598",
+                "file": "Sennheiser HD 598"
+            },
+            {
+                "index": 94,
+                "name": "HD 599",
+                "file": "Sennheiser HD 599"
+            },
+            {
+                "index": 94,
+                "name": "HD 600",
+                "file": "Sennheiser HD 600"
+            },
+            {
+                "index": 94,
+                "name": "HD 650",
+                "file": "Sennheiser HD 650"
+            },
+            {
+                "index": 94,
+                "name": "HD 660 S",
+                "file": "Sennheiser HD 660 S"
+            },
+            {
+                "index": 94,
+                "name": "HD 660S2",
+                "file": "Sennheiser HD 660S2"
+            },
+            {
+                "index": 94,
+                "name": "HD 6XX",
+                "file": "Sennheiser HD 6XX"
+            },
+            {
+                "index": 94,
+                "name": "HD 700",
+                "file": "Sennheiser HD 700"
+            },
+            {
+                "index": 94,
+                "name": "HD 800 S",
+                "file": "Sennheiser HD 800 S"
+            },
+            {
+                "index": 94,
+                "name": "HD 820",
+                "file": "Sennheiser HD 820"
+            },
+            {
+                "index": 94,
+                "name": "HD 8XX",
+                "file": "Sennheiser HD 8XX"
+            },
+            {
+                "index": 94,
+                "name": "MM 450-X",
+                "file": "Sennheiser MM 450-X"
+            },
+            {
+                "index": 94,
+                "name": "MM 550-X",
+                "file": "Sennheiser MM 550-X"
+            },
+            {
+                "index": 94,
+                "name": "Momentum 2.0",
+                "file": "Sennheiser Momentum 2.0"
+            },
+            {
+                "index": 94,
+                "name": "Momentum 2.0 On-Ear",
+                "file": "Sennheiser Momentum 2.0 On-Ear"
+            },
+            {
+                "index": 94,
+                "name": "Momentum 2.0 Wireless",
+                "file": "Sennheiser Momentum 2.0 Wireless"
+            },
+            {
+                "index": 94,
+                "name": "Momentum 3 Wireless",
+                "file": "Sennheiser Momentum 3 Wireless"
+            },
+            {
+                "index": 94,
+                "name": "Momentum 4 Wireless",
+                "file": "Sennheiser Momentum 4 Wireless"
+            },
+            {
+                "index": 94,
+                "name": "PC38X",
+                "file": "Sennheiser PC38X"
+            },
+            {
+                "index": 94,
+                "name": "PXC 250 II",
+                "file": "Sennheiser PXC 250 II"
+            },
+            {
+                "index": 94,
+                "name": "PXC 450",
+                "file": "Sennheiser PXC 450"
+            },
+            {
+                "index": 94,
+                "name": "PXC 550 Wireless",
+                "file": "Sennheiser PXC 550 Wireless"
+            },
+            {
+                "index": 94,
+                "name": "PXC 550-II Wireless",
+                "file": "Sennheiser PXC 550-II Wireless"
+            },
+            {
+                "index": 94,
+                "name": "RS 165",
+                "file": "Sennheiser RS 165"
+            },
+            {
+                "index": 94,
+                "name": "RS 175",
+                "file": "Sennheiser RS 175"
+            },
+            {
+                "index": 94,
+                "name": "RS 185",
+                "file": "Sennheiser RS 185"
+            },
+            {
+                "index": 94,
+                "name": "RS 195",
+                "file": "Sennheiser RS 195"
+            },
+            {
+                "index": 94,
+                "name": "SC 160 USB-C",
+                "file": "Sennheiser SC 160 USB-C"
+            }
+        ]
+    },
+    {
+        "name": "Shure",
+        "phones": [
+            {
+                "index": 96,
+                "name": "AONIC 50",
+                "file": "Shure AONIC 50"
+            },
+            {
+                "name": "AONIC 50 Gen 2",
+                "file": "Shure AONIC 50 Gen 2"
+            },
+            {
+                "index": 96,
+                "name": "SRH240",
+                "file": "Shure SRH240"
+            },
+            {
+                "index": 96,
+                "name": "SRH440",
+                "file": "Shure SRH440"
+            }
+        ]
+    },
+    {
+        "name": "Skullcandy",
+        "phones": [
+            {
+                "index": 97,
+                "name": "Crusher 360",
+                "file": "Skullcandy Crusher 360"
+            },
+            {
+                "index": 97,
+                "name": "Crusher Evo",
+                "file": "Skullcandy Crusher Evo"
+            },
+            {
+                "index": 97,
+                "name": "Crusher",
+                "file": "Skullcandy Crusher"
+            },
+            {
+                "index": 97,
+                "name": "Crusher Wireless",
+                "file": "Skullcandy Crusher Wireless"
+            },
+            {
+                "index": 97,
+                "name": "Grind",
+                "file": "Skullcandy Grind"
+            },
+            {
+                "index": 97,
+                "name": "Hesh 2",
+                "file": "Skullcandy Hesh 2"
+            },
+            {
+                "index": 97,
+                "name": "Hesh 3",
+                "file": "Skullcandy Hesh 3"
+            },
+            {
+                "index": 97,
+                "name": "Hesh ANC",
+                "file": "Skullcandy Hesh ANC"
+            },
+            {
+                "index": 97,
+                "name": "Hesh Evo",
+                "file": "Skullcandy Hesh Evo"
+            },
+            {
+                "index": 97,
+                "name": "Riff Wireless 2",
+                "file": "Skullcandy Riff Wireless 2"
+            },
+            {
+                "index": 97,
+                "name": "Venue",
+                "file": "Skullcandy Venue"
+            }
+        ]
+    },
+    {
+        "name": "Sony",
+        "phones": [
+            {
+                "index": 98,
+                "name": "INZONE H3",
+                "file": "Sony INZONE H3"
+            },
+            {
+                "index": 98,
+                "name": "INZONE H7",
+                "file": "Sony INZONE H7"
+            },
+            {
+                "index": 98,
+                "name": "INZONE H9",
+                "file": "Sony INZONE H9"
+            },
+            {
+                "index": 98,
+                "name": "MDR-1000X",
+                "file": "Sony MDR-1000X"
+            },
+            {
+                "index": 98,
+                "name": "MDR-100AAP",
+                "file": "Sony MDR-100AAP"
+            },
+            {
+                "index": 98,
+                "name": "MDR-1A",
+                "file": "Sony MDR-1A"
+            },
+            {
+                "index": 98,
+                "name": "MDR-7506",
+                "file": "Sony MDR-7506"
+            },
+            {
+                "index": 98,
+                "name": "MDR-7520",
+                "file": "Sony MDR-7520"
+            },
+            {
+                "index": 98,
+                "name": "MDR-MV1",
+                "file": "Sony MDR-MV1"
+            },
+            {
+                "index": 98,
+                "name": "MDR-NC8",
+                "file": "Sony MDR-NC8"
+            },
+            {
+                "index": 98,
+                "name": "MDR-XB950B1",
+                "file": "Sony MDR-XB950B1"
+            },
+            {
+                "index": 98,
+                "name": "MDR-XB950N1",
+                "file": "Sony MDR-XB950N1"
+            },
+            {
+                "index": 98,
+                "name": "MDR-ZX110NC",
+                "file": "Sony MDR-ZX110NC"
+            },
+            {
+                "index": 98,
+                "name": "MDR-ZX550BN",
+                "file": "Sony MDR-ZX550BN"
+            },
+            {
+                "index": 98,
+                "name": "MDR-ZX770BN",
+                "file": "Sony MDR-ZX770BN"
+            },
+            {
+                "index": 98,
+                "name": "PULSE 3D",
+                "file": "Sony PULSE 3D"
+            },
+            {
+                "index": 98,
+                "name": "WH-1000XM2",
+                "file": "Sony WH-1000XM2"
+            },
+            {
+                "index": 98,
+                "name": "WH-1000XM3",
+                "file": "Sony WH-1000XM3"
+            },
+            {
+                "index": 98,
+                "name": "WH-1000XM4",
+                "file": "Sony WH-1000XM4"
+            },
+            {
+                "index": 98,
+                "name": "WH-1000XM5",
+                "file": "Sony WH-1000XM5"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH400",
+                "file": "Sony WH-CH400"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH500",
+                "file": "Sony WH-CH500"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH510",
+                "file": "Sony WH-CH510"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH520",
+                "file": "Sony WH-CH520"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH700N",
+                "file": "Sony WH-CH700N"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH710N",
+                "file": "Sony WH-CH710N"
+            },
+            {
+                "index": 98,
+                "name": "WH-CH720N",
+                "file": "Sony WH-CH720N"
+            },
+            {
+                "index": 98,
+                "name": "WH-H900N",
+                "file": "Sony WH-H900N"
+            },
+            {
+                "index": 98,
+                "name": "WH-H910N",
+                "file": "Sony WH-H910N"
+            },
+            {
+                "index": 98,
+                "name": "WH-XB700",
+                "file": "Sony WH-XB700"
+            },
+            {
+                "index": 98,
+                "name": "WH-XB900N",
+                "file": "Sony WH-XB900N"
+            },
+            {
+                "index": 98,
+                "name": "WH-XB910N",
+                "file": "Sony WH-XB910N"
+            }
+        ]
+    },
+    {
+        "name": "Sound Intone",
+        "phones": [
+            {
+                "index": 99,
+                "name": "CX-05",
+                "file": "Sound Intone CX-05"
+            }
+        ]
+    },
+    {
+        "name": "Status Audio",
+        "phones": [
+            {
+                "index": 101,
+                "name": "BT One",
+                "file": "Status Audio BT One"
+            }
+        ]
+    },
+    {
+        "name": "Stax",
+        "phones": [
+            {
+                "index": 103,
+                "name": "SR-L300",
+                "file": "Stax SR-L300"
+            }
+        ]
+    },
+    {
+        "name": "SteelSeries",
+        "phones": [
+            {
+                "index": 104,
+                "name": "Arctis 1",
+                "file": "SteelSeries Arctis 1"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 1 Wireless",
+                "file": "SteelSeries Arctis 1 Wireless"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 3 2019 Edition",
+                "file": "SteelSeries Arctis 3 2019 Edition"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 5 2019 Edition",
+                "file": "SteelSeries Arctis 5 2019 Edition"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7 2019 Edition",
+                "file": "SteelSeries Arctis 7 2019 Edition"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7",
+                "file": "SteelSeries Arctis 7"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7+",
+                "file": "SteelSeries Arctis 7+"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7P",
+                "file": "SteelSeries Arctis 7P"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7P+",
+                "file": "SteelSeries Arctis 7P+"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 7X",
+                "file": "SteelSeries Arctis 7X"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 9",
+                "file": "SteelSeries Arctis 9"
+            },
+            {
+                "index": 104,
+                "name": "Arctis 9X",
+                "file": "SteelSeries Arctis 9X"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Nova 1",
+                "file": "SteelSeries Arctis Nova 1"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Nova 3",
+                "file": "SteelSeries Arctis Nova 3"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Nova 7 Wireless [7, 7P, 7X]",
+                "file": "SteelSeries Arctis Nova 7X"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Nova Pro",
+                "file": "SteelSeries Arctis Nova Pro"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Nova Pro Wireless",
+                "file": "SteelSeries Arctis Nova Pro Wireless"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Prime",
+                "file": "SteelSeries Arctis Prime"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Pro GameDAC",
+                "file": "SteelSeries Arctis Pro GameDAC"
+            },
+            {
+                "index": 104,
+                "name": "Arctis Pro Wireless",
+                "file": "SteelSeries Arctis Pro Wireless"
+            },
+            {
+                "index": 104,
+                "name": "Siberia 200",
+                "file": "SteelSeries Siberia 200"
+            }
+        ]
+    },
+    {
+        "name": "Superlux",
+        "phones": [
+            {
+                "index": 105,
+                "name": "HD 668B",
+                "file": "Superlux HD 668B"
+            },
+            {
+                "index": 105,
+                "name": "HD 681 EVO",
+                "file": "Superlux HD 681 EVO"
+            },
+            {
+                "index": 105,
+                "name": "HD 681",
+                "file": "Superlux HD 681"
+            }
+        ]
+    },
+    {
+        "name": "TREBLAB",
+        "phones": [
+            {
+                "index": 109,
+                "name": "Z2",
+                "file": "TREBLAB Z2"
+            },
+            {
+                "index": 109,
+                "name": "Z7 Pro",
+                "file": "TREBLAB Z7 Pro"
+            }
+        ]
+    },
+    {
+        "name": "TaoTronics",
+        "phones": [
+            {
+                "index": 110,
+                "name": "SoundSurge 60",
+                "file": "TaoTronics SoundSurge 60"
+            },
+            {
+                "index": 110,
+                "name": "TT-BH041 Bluetooth Headset",
+                "file": "TaoTronics TT-BH041 Bluetooth Headset"
+            }
+        ]
+    },
+    {
+        "name": "Tascam",
+        "phones": [
+            {
+                "index": 111,
+                "name": "TH-02",
+                "file": "Tascam TH-02"
+            }
+        ]
+    },
+    {
+        "name": "Turtle Beach",
+        "phones": [
+            {
+                "index": 114,
+                "name": "Elite 800",
+                "file": "Turtle Beach Elite 800"
+            },
+            {
+                "index": 114,
+                "name": "Elite Atlas Aero",
+                "file": "Turtle Beach Elite Atlas Aero"
+            },
+            {
+                "index": 114,
+                "name": "Elite Atlas",
+                "file": "Turtle Beach Elite Atlas"
+            },
+            {
+                "index": 114,
+                "name": "Elite Pro 2 SuperAmp",
+                "file": "Turtle Beach Elite Pro 2 SuperAmp"
+            },
+            {
+                "index": 114,
+                "name": "Recon 200 Gen 2",
+                "file": "Turtle Beach Recon 200 Gen 2"
+            },
+            {
+                "index": 114,
+                "name": "Recon 200",
+                "file": "Turtle Beach Recon 200"
+            },
+            {
+                "index": 114,
+                "name": "Recon 500",
+                "file": "Turtle Beach Recon 500"
+            },
+            {
+                "index": 114,
+                "name": "Recon 50X",
+                "file": "Turtle Beach Recon 50X"
+            },
+            {
+                "index": 114,
+                "name": "Recon 70",
+                "file": "Turtle Beach Recon 70"
+            },
+            {
+                "index": 114,
+                "name": "Stealth 300",
+                "file": "Turtle Beach Stealth 300"
+            },
+            {
+                "index": 114,
+                "name": "Stealth 600 Gen 2",
+                "file": "Turtle Beach Stealth 600 Gen 2"
+            },
+            {
+                "index": 114,
+                "name": "Stealth 600",
+                "file": "Turtle Beach Stealth 600"
+            },
+            {
+                "index": 114,
+                "name": "Stealth 700 Gen 2",
+                "file": "Turtle Beach Stealth 700 Gen 2"
+            },
+            {
+                "index": 114,
+                "name": "Stealth 700",
+                "file": "Turtle Beach Stealth 700"
+            },
+            {
+                "index": 114,
+                "name": "Stealth Pro",
+                "file": "Turtle Beach Stealth Pro"
+            }
+        ]
+    },
+    {
+        "name": "V-MODA",
+        "phones": [
+            {
+                "index": 116,
+                "name": "Crossfade 2 Wireless",
+                "file": "V-MODA Crossfade 2 Wireless"
+            },
+            {
+                "index": 116,
+                "name": "Crossfade M-100",
+                "file": "V-MODA Crossfade M-100"
+            }
+        ]
+    },
+    {
+        "name": "Wyze",
+        "phones": [
+            {
+                "index": 119,
+                "name": "Noise-Cancelling Headphones",
+                "file": "Wyze Noise-Cancelling Headphones"
+            },
+            {
+                "index": 119,
+                "name": "Wireless Gaming Headset",
+                "file": "Wyze Wireless Gaming Headset"
+            }
+        ]
+    },
+    {
+        "name": "Xbox",
+        "phones": [
+            {
+                "index": 121,
+                "name": "Stereo Headset",
+                "file": "Xbox Stereo Headset"
+            },
+            {
+                "index": 121,
+                "name": "Wireless Headset",
+                "file": "Xbox Wireless Headset"
+            }
+        ]
+    },
+    {
+        "name": "iClever",
+        "phones": [
+            {
+                "index": 123,
+                "name": "BTH02",
+                "file": "iClever BTH02"
+            },
+            {
+                "index": 123,
+                "name": "Boostcare",
+                "file": "iClever Boostcare"
+            }
+        ]
+    }
+]

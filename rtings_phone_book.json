@@ -1,0 +1,1849 @@
+[
+    {
+        "name": "1MORE",
+        "phones": [
+            {
+                "index": 0,
+                "name": "Piston Classic",
+                "file": "1MORE Piston Classic"
+            },
+            {
+                "index": 0,
+                "name": "Piston Fit",
+                "file": "1MORE Piston Fit"
+            },
+            {
+                "index": 0,
+                "name": "Quad Driver",
+                "file": "1MORE Quad Driver"
+            },
+            {
+                "index": 0,
+                "name": "Triple Driver",
+                "file": "1MORE Triple Driver"
+            }
+        ]
+    },
+    {
+        "name": "7Hz",
+        "phones": [
+            {
+                "index": 1,
+                "name": "Timeless",
+                "file": "7Hz Timeless"
+            }
+        ]
+    },
+    {
+        "name": "AKG",
+        "phones": [
+            {
+                "index": 2,
+                "name": "K391-NC",
+                "file": "AKG K391-NC"
+            },
+            {
+                "index": 2,
+                "name": "N200",
+                "file": "AKG N200"
+            }
+        ]
+    },
+    {
+        "name": "AUKEY",
+        "phones": [
+            {
+                "index": 4,
+                "name": "Latitude",
+                "file": "AUKEY Latitude"
+            }
+        ]
+    },
+    {
+        "name": "Altec Lansing",
+        "phones": [
+            {
+                "index": 6,
+                "name": "True Evo",
+                "file": "Altec Lansing True Evo"
+            }
+        ]
+    },
+    {
+        "name": "Amazon",
+        "phones": [
+            {
+                "index": 7,
+                "name": "Echo Buds Gen 2",
+                "file": "Amazon Echo Buds Gen 2"
+            },
+            {
+                "index": 7,
+                "name": "Echo Buds Gen 3",
+                "file": "Amazon Echo Buds Gen 3"
+            },
+            {
+                "index": 7,
+                "name": "Echo Buds",
+                "file": "Amazon Echo Buds"
+            }
+        ]
+    },
+    {
+        "name": "Anker",
+        "phones": [
+            {
+                "index": 9,
+                "name": "SoundBuds Curve",
+                "file": "Anker SoundBuds Curve"
+            },
+            {
+                "index": 9,
+                "name": "SoundBuds Curve Upgraded 2019",
+                "file": "Anker SoundBuds Curve Upgraded 2019"
+            },
+            {
+                "index": 9,
+                "name": "SoundBuds Life",
+                "file": "Anker SoundBuds Life"
+            },
+            {
+                "index": 9,
+                "name": "SoundBuds Sport",
+                "file": "Anker SoundBuds Sport"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Liberty Air 2",
+                "file": "Anker SoundCore Liberty Air 2"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Liberty Air",
+                "file": "Anker SoundCore Liberty Air"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Liberty Lite",
+                "file": "Anker SoundCore Liberty Lite"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Life 2",
+                "file": "Anker SoundCore Life 2"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Life P2",
+                "file": "Anker SoundCore Life P2"
+            },
+            {
+                "index": 9,
+                "name": "SoundCore Life P3",
+                "file": "Anker SoundCore Life P3"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Liberty 2 Pro",
+                "file": "Anker Soundcore Liberty 2 Pro"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Liberty 3 Pro",
+                "file": "Anker Soundcore Liberty 3 Pro"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Liberty 4",
+                "file": "Anker Soundcore Liberty 4"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Liberty 4 NC",
+                "file": "Anker Soundcore Liberty 4 NC"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Liberty Air 2 Pro",
+                "file": "Anker Soundcore Liberty Air 2 Pro"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Life A2 NC",
+                "file": "Anker Soundcore Life A2 NC"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Life Dot 2",
+                "file": "Anker Soundcore Life Dot 2"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Space A40",
+                "file": "Anker Soundcore Space A40"
+            },
+            {
+                "index": 9,
+                "name": "Soundcore Spirit X",
+                "file": "Anker Soundcore Spirit X"
+            },
+            {
+                "index": 9,
+                "name": "Zolo Liberty+",
+                "file": "Anker Zolo Liberty+"
+            }
+        ]
+    },
+    {
+        "name": "Apple",
+        "phones": [
+            {
+                "index": 10,
+                "name": "AirPods Pro",
+                "file": "Apple AirPods Pro"
+            },
+            {
+                "index": 10,
+                "name": "AirPods Pro (2nd generation)",
+                "file": "Apple AirPods Pro (2nd generation)"
+            }
+        ]
+    },
+    {
+        "name": "Audio-Technica",
+        "phones": [
+            {
+                "index": 12,
+                "name": "ATH-ANC23",
+                "file": "Audio-Technica ATH-ANC23"
+            },
+            {
+                "index": 12,
+                "name": "ATH-ANC33iS",
+                "file": "Audio-Technica ATH-ANC33iS"
+            }
+        ]
+    },
+    {
+        "name": "BGVP",
+        "phones": [
+            {
+                "index": 14,
+                "name": "DM6",
+                "file": "BGVP DM6"
+            }
+        ]
+    },
+    {
+        "name": "Bang & Olufsen",
+        "phones": [
+            {
+                "index": 15,
+                "name": "Beoplay E8",
+                "file": "Bang & Olufsen Beoplay E8"
+            },
+            {
+                "index": 15,
+                "name": "Beoplay E8 2.0",
+                "file": "Bang & Olufsen Beoplay E8 2.0"
+            },
+            {
+                "index": 15,
+                "name": "Beoplay E8 3.0",
+                "file": "Bang & Olufsen Beoplay E8 3.0"
+            }
+        ]
+    },
+    {
+        "name": "Beats",
+        "phones": [
+            {
+                "index": 16,
+                "name": "BeatsX",
+                "file": "Beats BeatsX"
+            },
+            {
+                "index": 16,
+                "name": "Fit Pro",
+                "file": "Beats Fit Pro"
+            },
+            {
+                "index": 16,
+                "name": "Flex",
+                "file": "Beats Flex"
+            },
+            {
+                "index": 16,
+                "name": "Powerbeats 2 Wireless",
+                "file": "Beats Powerbeats 2 Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Powerbeats 4",
+                "file": "Beats Powerbeats 4"
+            },
+            {
+                "index": 16,
+                "name": "Powerbeats Pro",
+                "file": "Beats Powerbeats Pro"
+            },
+            {
+                "index": 16,
+                "name": "Powerbeats3 Wireless",
+                "file": "Beats Powerbeats3 Wireless"
+            },
+            {
+                "index": 16,
+                "name": "Studio Buds +",
+                "file": "Beats Studio Buds +"
+            },
+            {
+                "index": 16,
+                "name": "Studio Buds",
+                "file": "Beats Studio Buds"
+            },
+            {
+                "index": 16,
+                "name": "urBeats",
+                "file": "Beats urBeats"
+            },
+            {
+                "index": 16,
+                "name": "urBeats3",
+                "file": "Beats urBeats3"
+            }
+        ]
+    },
+    {
+        "name": "Betron",
+        "phones": [
+            {
+                "index": 17,
+                "name": "YSM1000",
+                "file": "Betron YSM1000"
+            }
+        ]
+    },
+    {
+        "name": "Boltune",
+        "phones": [
+            {
+                "index": 21,
+                "name": "BT-BH024",
+                "file": "Boltune BT-BH024"
+            }
+        ]
+    },
+    {
+        "name": "Bose",
+        "phones": [
+            {
+                "index": 22,
+                "name": "Hearphones",
+                "file": "Bose Hearphones"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort 20",
+                "file": "Bose QuietComfort 20"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort Earbuds",
+                "file": "Bose QuietComfort Earbuds"
+            },
+            {
+                "index": 22,
+                "name": "QuietComfort Earbuds II",
+                "file": "Bose QuietComfort Earbuds II"
+            },
+            {
+                "name": "QuietComfort Ultra Earbuds",
+                "file": "Bose QuietComfort Ultra Earbuds"
+            },
+            {
+                "index": 22,
+                "name": "SoundSport Free",
+                "file": "Bose SoundSport Free"
+            },
+            {
+                "index": 22,
+                "name": "SoundSport In-Ear",
+                "file": "Bose SoundSport In-Ear"
+            },
+            {
+                "index": 22,
+                "name": "SoundSport Wireless",
+                "file": "Bose SoundSport Wireless"
+            },
+            {
+                "index": 22,
+                "name": "SoundTrue Ultra In-Ear",
+                "file": "Bose SoundTrue Ultra In-Ear"
+            },
+            {
+                "index": 22,
+                "name": "Sport Earbuds",
+                "file": "Bose Sport Earbuds"
+            }
+        ]
+    },
+    {
+        "name": "Bowers & Wilkins",
+        "phones": [
+            {
+                "index": 23,
+                "name": "PI7",
+                "file": [
+                    "Bowers & Wilkins PI7",
+                    "Bowers & Wilkins Pi7 S2"
+                ],
+                "suffix": [
+                    "S1",
+                    "S2"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Cambridge Audio",
+        "phones": [
+            {
+                "index": 26,
+                "name": "Melomania 1",
+                "file": "Cambridge Audio Melomania 1"
+            },
+            {
+                "index": 26,
+                "name": "Melomania 1+",
+                "file": "Cambridge Audio Melomania 1+"
+            }
+        ]
+    },
+    {
+        "name": "Cowin",
+        "phones": [
+            {
+                "index": 30,
+                "name": "Apex Elite",
+                "file": "Cowin Apex Elite"
+            }
+        ]
+    },
+    {
+        "name": "Creative",
+        "phones": [
+            {
+                "index": 31,
+                "name": "Outlier Air",
+                "file": "Creative Outlier Air"
+            },
+            {
+                "index": 31,
+                "name": "Outlier Air V2",
+                "file": "Creative Outlier Air V2"
+            }
+        ]
+    },
+    {
+        "name": "Denon",
+        "phones": [
+            {
+                "index": 32,
+                "name": "PerL Pro",
+                "file": "Denon PerL Pro"
+            }
+        ]
+    },
+    {
+        "name": "ENACFIRE",
+        "phones": [
+            {
+                "index": 37,
+                "name": "E60",
+                "file": "ENACFIRE E60"
+            }
+        ]
+    },
+    {
+        "name": "EPOS",
+        "phones": [
+            {
+                "index": 38,
+                "name": "GTW 270 Hybrid",
+                "file": "EPOS GTW 270 Hybrid"
+            }
+        ]
+    },
+    {
+        "name": "EarFun",
+        "phones": [
+            {
+                "index": 39,
+                "name": "Air Pro 2 (2021)",
+                "file": "EarFun Air Pro 2 (2021)"
+            },
+            {
+                "index": 39,
+                "name": "Air Pro 3",
+                "file": "EarFun Air Pro 3"
+            },
+            {
+                "index": 39,
+                "name": "Air Pro",
+                "file": "EarFun Air Pro"
+            },
+            {
+                "index": 39,
+                "name": "Free",
+                "file": "EarFun Free"
+            }
+        ]
+    },
+    {
+        "name": "Etymotic",
+        "phones": [
+            {
+                "index": 40,
+                "name": "ER4XR",
+                "file": "Etymotic ER4XR"
+            },
+            {
+                "index": 40,
+                "name": "HF5",
+                "file": "Etymotic HF5"
+            }
+        ]
+    },
+    {
+        "name": "FIIL",
+        "phones": [
+            {
+                "index": 41,
+                "name": "T1X",
+                "file": "FIIL T1X"
+            }
+        ]
+    },
+    {
+        "name": "Fitbit",
+        "phones": [
+            {
+                "index": 42,
+                "name": "Flyer",
+                "file": "Fitbit Flyer"
+            }
+        ]
+    },
+    {
+        "name": "Google",
+        "phones": [
+            {
+                "index": 44,
+                "name": "Pixel Buds (2017)",
+                "file": "Google Pixel Buds (2017)"
+            },
+            {
+                "index": 44,
+                "name": "Pixel Buds (2020)",
+                "file": "Google Pixel Buds (2020)"
+            },
+            {
+                "index": 44,
+                "name": "Pixel Buds A-Series",
+                "file": "Google Pixel Buds A-Series"
+            },
+            {
+                "index": 44,
+                "name": "Pixel Buds Pro",
+                "file": "Google Pixel Buds Pro"
+            }
+        ]
+    },
+    {
+        "name": "JBL",
+        "phones": [
+            {
+                "index": 50,
+                "name": "CLUB PRO Plus TWS",
+                "file": "JBL CLUB PRO Plus TWS"
+            },
+            {
+                "index": 50,
+                "name": "E25BT",
+                "file": "JBL E25BT"
+            },
+            {
+                "index": 50,
+                "name": "Endurance Dive",
+                "file": "JBL Endurance Dive"
+            },
+            {
+                "index": 50,
+                "name": "Endurance Peak 3",
+                "file": "JBL Endurance Peak 3"
+            },
+            {
+                "index": 50,
+                "name": "Endurance Peak II",
+                "file": "JBL Endurance Peak II"
+            },
+            {
+                "index": 50,
+                "name": "Endurance Peak",
+                "file": "JBL Endurance Peak"
+            },
+            {
+                "index": 50,
+                "name": "Endurance Sprint",
+                "file": "JBL Endurance Sprint"
+            },
+            {
+                "index": 50,
+                "name": "Everest 110",
+                "file": "JBL Everest 110"
+            },
+            {
+                "index": 50,
+                "name": "Free 2018",
+                "file": "JBL Free 2018"
+            },
+            {
+                "index": 50,
+                "name": "Free",
+                "file": "JBL Free"
+            },
+            {
+                "index": 50,
+                "name": "Free X",
+                "file": "JBL Free X"
+            },
+            {
+                "index": 50,
+                "name": "Live 200BT",
+                "file": "JBL Live 200BT"
+            },
+            {
+                "index": 50,
+                "name": "Live 300TWS",
+                "file": "JBL Live 300TWS"
+            },
+            {
+                "index": 50,
+                "name": "Live Free NC+ TWS",
+                "file": "JBL Live Free NC+ TWS"
+            },
+            {
+                "index": 50,
+                "name": "Live Pro 2 TWS",
+                "file": "JBL Live Pro 2 TWS"
+            },
+            {
+                "index": 50,
+                "name": "Live Pro+ TWS",
+                "file": "JBL Live Pro+ TWS"
+            },
+            {
+                "index": 50,
+                "name": "Reflect Flow",
+                "file": "JBL Reflect Flow"
+            },
+            {
+                "index": 50,
+                "name": "Reflect Mini 2",
+                "file": "JBL Reflect Mini 2"
+            },
+            {
+                "index": 50,
+                "name": "TUNE 120TWS",
+                "file": "JBL TUNE 120TWS"
+            },
+            {
+                "index": 50,
+                "name": "TUNE 220TWS",
+                "file": "JBL TUNE 220TWS"
+            },
+            {
+                "index": 50,
+                "name": "Tour Pro+ TWS",
+                "file": "JBL Tour Pro+ TWS"
+            },
+            {
+                "index": 50,
+                "name": "Tune 125TWS",
+                "file": "JBL Tune 125TWS"
+            },
+            {
+                "index": 50,
+                "name": "Tune 130NC TWS",
+                "file": "JBL Tune 130NC TWS"
+            },
+            {
+                "index": 50,
+                "name": "Tune 225TWS",
+                "file": "JBL Tune 225TWS"
+            },
+            {
+                "index": 50,
+                "name": "Tune 230NC TWS",
+                "file": "JBL Tune 230NC TWS"
+            },
+            {
+                "index": 50,
+                "name": "True Wireless Flash",
+                "file": "JBL UA True Wireless Flash",
+                "collab": "Under Armor"
+            },
+            {
+                "name": "Tune Flex",
+                "file": "JBL Tune Flex"
+            },
+            {
+                "index": 50,
+                "name": "Vibe 100TWS",
+                "file": "JBL Vibe 100TWS"
+            },
+            {
+                "index": 50,
+                "name": "Vibe Beam",
+                "file": "JBL Vibe Beam"
+            }
+        ]
+    },
+    {
+        "name": "JLab Audio",
+        "phones": [
+            {
+                "index": 51,
+                "name": "GO Air POP",
+                "file": "JLab Audio GO Air POP"
+            },
+            {
+                "index": 51,
+                "name": "JBuds Air ANC",
+                "file": "JLab Audio JBuds Air ANC"
+            },
+            {
+                "index": 51,
+                "name": "JBuds Air Executive",
+                "file": "JLab Audio JBuds Air Executive"
+            },
+            {
+                "index": 51,
+                "name": "JBuds Air",
+                "file": "JLab Audio JBuds Air"
+            }
+        ]
+    },
+    {
+        "name": "Jabra",
+        "phones": [
+            {
+                "name": "Elite 10",
+                "file": "Jabra Elite 10"
+            },
+            {
+                "index": 52,
+                "name": "Elite 25e",
+                "file": "Jabra Elite 25e"
+            },
+            {
+                "index": 52,
+                "name": "Elite 3",
+                "file": "Jabra Elite 3"
+            },
+            {
+                "index": 52,
+                "name": "Elite 4 Active",
+                "file": "Jabra Elite 4 Active"
+            },
+            {
+                "index": 52,
+                "name": "Elite 4",
+                "file": "Jabra Elite 4"
+            },
+            {
+                "index": 52,
+                "name": "Elite 45e",
+                "file": "Jabra Elite 45e"
+            },
+            {
+                "index": 52,
+                "name": "Elite 5",
+                "file": "Jabra Elite 5"
+            },
+            {
+                "index": 52,
+                "name": "Elite 65e",
+                "file": "Jabra Elite 65e"
+            },
+            {
+                "index": 52,
+                "name": "Elite 65t",
+                "file": "Jabra Elite 65t"
+            },
+            {
+                "index": 52,
+                "name": "Elite 7 Active",
+                "file": "Jabra Elite 7 Active"
+            },
+            {
+                "index": 52,
+                "name": "Elite 7 Pro",
+                "file": "Jabra Elite 7 Pro"
+            },
+            {
+                "index": 52,
+                "name": "Elite 75t",
+                "file": "Jabra Elite 75t"
+            },
+            {
+                "name": "Elite 8 Active",
+                "file": "Jabra Elite 8 Active"
+            },
+            {
+                "index": 52,
+                "name": "Elite 85t",
+                "file": "Jabra Elite 85t"
+            },
+            {
+                "index": 52,
+                "name": "Elite Active 45e",
+                "file": "Jabra Elite Active 45e"
+            },
+            {
+                "index": 52,
+                "name": "Elite Active 65t",
+                "file": "Jabra Elite Active 65t"
+            },
+            {
+                "index": 52,
+                "name": "Elite Active 75t",
+                "file": "Jabra Elite Active 75t"
+            },
+            {
+                "index": 52,
+                "name": "Elite Sport",
+                "file": "Jabra Elite Sport"
+            },
+            {
+                "index": 52,
+                "name": "Evolve 65t",
+                "file": "Jabra Evolve 65t"
+            }
+        ]
+    },
+    {
+        "name": "Jaybird",
+        "phones": [
+            {
+                "index": 53,
+                "name": "Freedom 2",
+                "file": "Jaybird Freedom 2"
+            },
+            {
+                "index": 53,
+                "name": "Freedom F5 (2016)",
+                "file": "Jaybird Freedom F5 (2016)"
+            },
+            {
+                "index": 53,
+                "name": "Run",
+                "file": "Jaybird Run"
+            },
+            {
+                "index": 53,
+                "name": "Run XT",
+                "file": "Jaybird Run XT"
+            },
+            {
+                "index": 53,
+                "name": "Tarah",
+                "file": "Jaybird Tarah"
+            },
+            {
+                "index": 53,
+                "name": "Tarah Pro",
+                "file": "Jaybird Tarah Pro"
+            },
+            {
+                "index": 53,
+                "name": "Vista 2",
+                "file": "Jaybird Vista 2"
+            },
+            {
+                "index": 53,
+                "name": "Vista",
+                "file": "Jaybird Vista"
+            },
+            {
+                "index": 53,
+                "name": "X2",
+                "file": "Jaybird X2"
+            },
+            {
+                "index": 53,
+                "name": "X3",
+                "file": "Jaybird X3"
+            },
+            {
+                "index": 53,
+                "name": "X4",
+                "file": "Jaybird X4"
+            }
+        ]
+    },
+    {
+        "name": "KZ",
+        "phones": [
+            {
+                "index": 54,
+                "name": "AS10",
+                "file": "KZ AS10"
+            },
+            {
+                "index": 54,
+                "name": "ZS10",
+                "file": "KZ ZS10"
+            },
+            {
+                "index": 54,
+                "name": "ZSN",
+                "file": "KZ ZSN"
+            },
+            {
+                "index": 54,
+                "name": "ZST",
+                "file": "KZ ZST"
+            }
+        ]
+    },
+    {
+        "name": "Klipsch",
+        "phones": [
+            {
+                "index": 55,
+                "name": "T5 II True Wireless ANC",
+                "file": "Klipsch T5 II True Wireless ANC"
+            },
+            {
+                "index": 55,
+                "name": "T5 II True Wireless Sport",
+                "file": "Klipsch T5 II True Wireless Sport"
+            }
+        ]
+    },
+    {
+        "name": "Logitech",
+        "phones": [
+            {
+                "index": 57,
+                "name": "G333",
+                "file": "Logitech G333"
+            }
+        ]
+    },
+    {
+        "name": "MEE Audio",
+        "phones": [
+            {
+                "index": 59,
+                "name": "Sport-Fi M6",
+                "file": "MEE Audio Sport-Fi M6"
+            },
+            {
+                "index": 59,
+                "name": "M6 Pro",
+                "file": "MEE Audio M6 Pro"
+            },
+            {
+                "index": 59,
+                "name": "M9B",
+                "file": "MEE Audio M9B"
+            },
+            {
+                "index": 59,
+                "name": "X6 Plus",
+                "file": "MEE Audio X6 Plus"
+            },
+            {
+                "index": 59,
+                "name": "X7",
+                "file": "MEE Audio X7"
+            }
+        ]
+    },
+    {
+        "name": "Monoprice",
+        "phones": [
+            {
+                "index": 64,
+                "name": "Enhanced Active",
+                "file": "Monoprice Enhanced Active"
+            }
+        ]
+    },
+    {
+        "name": "Monster",
+        "phones": [
+            {
+                "index": 65,
+                "name": "Clarity 101 AirLinks",
+                "file": "Monster Clarity 101 AirLinks"
+            }
+        ]
+    },
+    {
+        "name": "Moondrop",
+        "phones": [
+            {
+                "index": 66,
+                "name": "Aria",
+                "file": "Moondrop Aria"
+            },
+            {
+                "index": 66,
+                "name": "Blessing 3",
+                "file": "Moondrop Blessing 3"
+            },
+            {
+                "index": 66,
+                "name": "KATO",
+                "file": "Moondrop KATO"
+            }
+        ]
+    },
+    {
+        "name": "Mpow",
+        "phones": [
+            {
+                "name": "EM12",
+                "file": "Mpow EM12"
+            },
+            {
+                "index": 68,
+                "name": "Flame Pro",
+                "file": "Mpow Flame Pro"
+            },
+            {
+                "index": 68,
+                "name": "Jaws (4.1)",
+                "file": "Mpow Jaws (4.1)"
+            },
+            {
+                "index": 68,
+                "name": "M30",
+                "file": "Mpow M30"
+            },
+            {
+                "index": 68,
+                "name": "MDots",
+                "file": "Mpow MDots"
+            },
+            {
+                "index": 68,
+                "name": "X3",
+                "file": "Mpow X3"
+            },
+            {
+                "index": 68,
+                "name": "X5",
+                "file": "Mpow X5"
+            },
+            {
+                "index": 68,
+                "name": "X6",
+                "file": "Mpow X6"
+            }
+        ]
+    },
+    {
+        "name": "Nothing",
+        "phones": [
+            {
+                "index": 71,
+                "name": "ear (1)",
+                "file": "Nothing ear (1)"
+            },
+            {
+                "index": 71,
+                "name": "ear (2)",
+                "file": "Nothing ear (2)"
+            },
+            {
+                "index": 71,
+                "name": "ear (stick)",
+                "file": "Nothing ear (stick)"
+            }
+        ]
+    },
+    {
+        "name": "Nura",
+        "phones": [
+            {
+                "index": 72,
+                "name": "NuraLoop",
+                "file": "Nura NuraLoop"
+            }
+        ]
+    },
+    {
+        "name": "OnePlus",
+        "phones": [
+            {
+                "index": 73,
+                "name": "Buds",
+                "file": "OnePlus Buds"
+            },
+            {
+                "index": 73,
+                "name": "Buds Pro 2",
+                "file": "OnePlus Buds Pro 2"
+            },
+            {
+                "index": 73,
+                "name": "Buds Pro",
+                "file": "OnePlus Buds Pro"
+            },
+            {
+                "index": 73,
+                "name": "Buds Z",
+                "file": "OnePlus Buds Z"
+            }
+        ]
+    },
+    {
+        "name": "Panasonic",
+        "phones": [
+            {
+                "index": 75,
+                "name": "RP-HC56",
+                "file": "Panasonic RP-HC56"
+            },
+            {
+                "index": 75,
+                "name": "RP-HJE120",
+                "file": "Panasonic RP-HJE120"
+            }
+        ]
+    },
+    {
+        "name": "RHA",
+        "phones": [
+            {
+                "index": 82,
+                "name": "TrueConnect",
+                "file": "RHA TrueConnect"
+            }
+        ]
+    },
+    {
+        "name": "Raycon",
+        "phones": [
+            {
+                "index": 85,
+                "name": "E100",
+                "file": "Raycon E100"
+            },
+            {
+                "index": 85,
+                "name": "E25",
+                "file": "Raycon E25"
+            },
+            {
+                "index": 85,
+                "name": "E50",
+                "file": "Raycon E50"
+            },
+            {
+                "index": 85,
+                "name": "E55",
+                "file": "Raycon E55"
+            },
+            {
+                "index": 85,
+                "name": "The Fitness Earbuds (2021 Edition)",
+                "file": "Raycon The Fitness Earbuds (2021 Edition)"
+            }
+        ]
+    },
+    {
+        "name": "Razer",
+        "phones": [
+            {
+                "index": 86,
+                "name": "Hammerhead Pro HyperSpeed",
+                "file": "Razer Hammerhead Pro HyperSpeed"
+            },
+            {
+                "index": 86,
+                "name": "Hammerhead True Wireless (2019)",
+                "file": "Razer Hammerhead True Wireless (2019)"
+            },
+            {
+                "index": 86,
+                "name": "Hammerhead True Wireless (2021)",
+                "file": "Razer Hammerhead True Wireless (2021)"
+            },
+            {
+                "index": 86,
+                "name": "Hammerhead True Wireless Pro",
+                "file": "Razer Hammerhead True Wireless Pro"
+            },
+            {
+                "index": 86,
+                "name": "Hammerhead USB-C ANC",
+                "file": "Razer Hammerhead USB-C ANC"
+            },
+            {
+                "index": 86,
+                "name": "Moray",
+                "file": "Razer Moray"
+            }
+        ]
+    },
+    {
+        "name": "Rovking",
+        "phones": [
+            {
+                "index": 87,
+                "name": "V1",
+                "file": "Rovking V1"
+            }
+        ]
+    },
+    {
+        "name": "SENSO",
+        "phones": [
+            {
+                "index": 89,
+                "name": "ActivBuds S-250",
+                "file": "SENSO ActivBuds S-250"
+            }
+        ]
+    },
+    {
+        "name": "Sabbat",
+        "phones": [
+            {
+                "index": 91,
+                "name": "E12",
+                "file": "Sabbat E12"
+            }
+        ]
+    },
+    {
+        "name": "Samsung",
+        "phones": [
+            {
+                "index": 93,
+                "name": "EO-IG955 Type-C",
+                "file": "Samsung EO-IG955 Type-C"
+            },
+            {
+                "name": "Galaxy Buds FE",
+                "file": "Samsung Galaxy Buds FE"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds",
+                "file": "Samsung Galaxy Buds"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds Live",
+                "file": "Samsung Galaxy Buds Live"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds Plus",
+                "file": "Samsung Galaxy Buds Plus"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds Pro",
+                "file": "Samsung Galaxy Buds Pro"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds2",
+                "file": "Samsung Galaxy Buds2"
+            },
+            {
+                "index": 93,
+                "name": "Galaxy Buds2 Pro",
+                "file": "Samsung Galaxy Buds2 Pro"
+            },
+            {
+                "index": 93,
+                "name": "Gear IconX",
+                "file": "Samsung Gear IconX"
+            },
+            {
+                "name": "Level U Pro",
+                "file": "Samsung Level U Pro"
+            },
+            {
+                "name": "U Flex",
+                "file": "Samsung U Flex"
+            }
+        ]
+    },
+    {
+        "name": "Sennheiser",
+        "phones": [
+            {
+                "index": 94,
+                "name": "AMBEO Smart Headset",
+                "file": "Sennheiser AMBEO Smart Headset"
+            },
+            {
+                "index": 94,
+                "name": "CX Plus True Wireless",
+                "file": "Sennheiser CX Plus True Wireless"
+            },
+            {
+                "index": 94,
+                "name": "CX True Wireless",
+                "file": "Sennheiser CX True Wireless"
+            },
+            {
+                "index": 94,
+                "name": "CXC-700",
+                "file": "Sennheiser CXC-700"
+            },
+            {
+                "name": "HD1 In-Ear",
+                "file": "Sennheiser HD1 In-Ear"
+            },
+            {
+                "index": 94,
+                "name": "HD1 In-Ear Wireless",
+                "file": "Sennheiser HD1 In-Ear Wireless"
+            },
+            {
+                "index": 94,
+                "name": "IE 40 PRO",
+                "file": "Sennheiser IE 40 PRO"
+            },
+            {
+                "index": 94,
+                "name": "Momentum In-Ear",
+                "file": "Sennheiser Momentum In-Ear"
+            },
+            {
+                "index": 94,
+                "name": "Momentum True Wireless 2",
+                "file": "Sennheiser Momentum True Wireless 2"
+            },
+            {
+                "index": 94,
+                "name": "Momentum True Wireless 3",
+                "file": "Sennheiser Momentum True Wireless 3"
+            },
+            {
+                "index": 94,
+                "name": "Momentum True Wireless",
+                "file": "Sennheiser Momentum True Wireless"
+            }
+        ]
+    },
+    {
+        "name": "Shokz",
+        "phones": [
+            {
+                "index": 95,
+                "name": "OpenFit",
+                "file": "Shokz OpenFit"
+            }
+        ]
+    },
+    {
+        "name": "Shure",
+        "phones": [
+            {
+                "index": 96,
+                "name": "SE215",
+                "file": "Shure SE215"
+            },
+            {
+                "index": 96,
+                "name": "SE315",
+                "file": "Shure SE315"
+            },
+            {
+                "index": 96,
+                "name": "SE425",
+                "file": "Shure SE425"
+            }
+        ]
+    },
+    {
+        "name": "Skullcandy",
+        "phones": [
+            {
+                "index": 97,
+                "name": "Dime 2",
+                "file": "Skullcandy Dime 2"
+            },
+            {
+                "index": 97,
+                "name": "Dime",
+                "file": "Skullcandy Dime"
+            },
+            {
+                "index": 97,
+                "name": "Grind Fuel",
+                "file": "Skullcandy Grind Fuel"
+            },
+            {
+                "index": 97,
+                "name": "Indy ANC",
+                "file": "Skullcandy Indy ANC"
+            },
+            {
+                "index": 97,
+                "name": "Indy Evo",
+                "file": "Skullcandy Indy Evo"
+            },
+            {
+                "index": 97,
+                "name": "Indy Fuel",
+                "file": "Skullcandy Indy Fuel"
+            },
+            {
+                "index": 97,
+                "name": "Indy",
+                "file": "Skullcandy Indy"
+            },
+            {
+                "index": 97,
+                "name": "Jib",
+                "file": "Skullcandy Jib"
+            },
+            {
+                "index": 97,
+                "name": "Jib True",
+                "file": "Skullcandy Jib True"
+            },
+            {
+                "index": 97,
+                "name": "Push Active",
+                "file": "Skullcandy Push Active"
+            },
+            {
+                "index": 97,
+                "name": "Push",
+                "file": "Skullcandy Push"
+            },
+            {
+                "index": 97,
+                "name": "Push Ultra",
+                "file": "Skullcandy Push Ultra"
+            },
+            {
+                "index": 97,
+                "name": "Sesh ANC",
+                "file": "Skullcandy Sesh ANC"
+            },
+            {
+                "index": 97,
+                "name": "Sesh Evo",
+                "file": "Skullcandy Sesh Evo"
+            },
+            {
+                "index": 97,
+                "name": "Sesh",
+                "file": "Skullcandy Sesh"
+            },
+            {
+                "name": "Smokin Buds",
+                "file": "Skullcandy Smokin Buds"
+            },
+            {
+                "index": 97,
+                "name": "Spoke",
+                "file": "Skullcandy Spoke"
+            }
+        ]
+    },
+    {
+        "name": "Sony",
+        "phones": [
+            {
+                "index": 98,
+                "name": "LinkBuds S",
+                "file": "Sony LinkBuds S"
+            },
+            {
+                "index": 98,
+                "name": "MDR-XB50AP",
+                "file": "Sony MDR-XB50AP"
+            },
+            {
+                "index": 98,
+                "name": "MH755",
+                "file": "Sony MH755"
+            },
+            {
+                "index": 98,
+                "name": "WF-1000X",
+                "file": "Sony WF-1000X"
+            },
+            {
+                "index": 98,
+                "name": "WF-1000XM3",
+                "file": "Sony WF-1000XM3"
+            },
+            {
+                "index": 98,
+                "name": "WF-1000XM4",
+                "file": "Sony WF-1000XM4"
+            },
+            {
+                "index": 98,
+                "name": "WF-1000XM5",
+                "file": "Sony WF-1000XM5"
+            },
+            {
+                "name": "WF-C500",
+                "file": "Sony WF-C500"
+            },
+            {
+                "index": 98,
+                "name": "WF-C700N",
+                "file": "Sony WF-C700N"
+            },
+            {
+                "index": 98,
+                "name": "WF-SP700N",
+                "file": "Sony WF-SP700N"
+            },
+            {
+                "index": 98,
+                "name": "WF-SP800N",
+                "file": "Sony WF-SP800N"
+            },
+            {
+                "index": 98,
+                "name": "WF-XB700",
+                "file": "Sony WF-XB700"
+            },
+            {
+                "index": 98,
+                "name": "WI-1000X",
+                "file": "Sony WI-1000X"
+            },
+            {
+                "index": 98,
+                "name": "WI-1000XM2",
+                "file": "Sony WI-1000XM2"
+            },
+            {
+                "index": 98,
+                "name": "WI-C200",
+                "file": "Sony WI-C200"
+            },
+            {
+                "index": 98,
+                "name": "WI-C300",
+                "file": "Sony WI-C300"
+            },
+            {
+                "index": 98,
+                "name": "WI-C310",
+                "file": "Sony WI-C310"
+            },
+            {
+                "index": 98,
+                "name": "WI-C400",
+                "file": "Sony WI-C400"
+            },
+            {
+                "index": 98,
+                "name": "WI-C600N",
+                "file": "Sony WI-C600N"
+            },
+            {
+                "index": 98,
+                "name": "WI-SP500",
+                "file": "Sony WI-SP500"
+            },
+            {
+                "index": 98,
+                "name": "WI-SP600N",
+                "file": "Sony WI-SP600N"
+            },
+            {
+                "index": 98,
+                "name": "WI-XB400",
+                "file": "Sony WI-XB400"
+            }
+        ]
+    },
+    {
+        "name": "SoundPeats",
+        "phones": [
+            {
+                "index": 100,
+                "name": "Q8",
+                "file": "SoundPeats Q8"
+            },
+            {
+                "index": 100,
+                "name": "Q9A",
+                "file": "SoundPeats Q9A"
+            },
+            {
+                "index": 100,
+                "name": "QY8",
+                "file": "SoundPeats QY8"
+            },
+            {
+                "index": 100,
+                "name": "QY9",
+                "file": "SoundPeats QY9"
+            },
+            {
+                "index": 100,
+                "name": "TrueFree 2",
+                "file": "SoundPeats TrueFree 2"
+            },
+            {
+                "index": 100,
+                "name": "TrueFree/True",
+                "file": "SoundPeats TrueFree"
+            }
+        ]
+    },
+    {
+        "name": "Status",
+        "phones": [
+            {
+                "index": 101,
+                "name": "Audio Between 3ANC",
+                "file": "Status Audio Between 3ANC"
+            },
+            {
+                "index": 101,
+                "name": "Audio Between Pro",
+                "file": "Status Audio Between Pro"
+            }
+        ]
+    },
+    {
+        "name": "SteelSeries",
+        "phones": [
+            {
+                "index": 104,
+                "name": "Tusq",
+                "file": "SteelSeries Tusq"
+            }
+        ]
+    },
+    {
+        "name": "Swimbuds",
+        "phones": [
+            {
+                "index": 106,
+                "name": "Waterproof Headphones",
+                "file": "Swimbuds Waterproof Headphones"
+            }
+        ]
+    },
+    {
+        "name": "Symphonized",
+        "phones": [
+            {
+                "index": 107,
+                "name": "NRG 3.0",
+                "file": "Symphonized NRG 3.0"
+            }
+        ]
+    },
+    {
+        "name": "TOZO",
+        "phones": [
+            {
+                "index": 108,
+                "name": "NC2",
+                "file": "TOZO NC2"
+            },
+            {
+                "index": 108,
+                "name": "NC7",
+                "file": "TOZO NC7"
+            },
+            {
+                "index": 108,
+                "name": "NC9",
+                "file": "TOZO NC9"
+            },
+            {
+                "index": 108,
+                "name": "T10",
+                "file": "TOZO T10"
+            },
+            {
+                "index": 108,
+                "name": "T12",
+                "file": "TOZO T12"
+            },
+            {
+                "index": 108,
+                "name": "T6",
+                "file": "TOZO T6"
+            }
+        ]
+    },
+    {
+        "name": "TREBLAB",
+        "phones": [
+            {
+                "index": 109,
+                "name": "X5",
+                "file": "TREBLAB X5"
+            }
+        ]
+    },
+    {
+        "name": "Truthear",
+        "phones": [
+            {
+                "name": "Zero",
+                "collab": "crinacle",
+                "file": "Truthear x Crinacle Zero"
+            }
+        ]
+    },
+    {
+        "name": "TaoTronics",
+        "phones": [
+            {
+                "index": 110,
+                "name": "SoundLiberty 79",
+                "file": "TaoTronics SoundLiberty 79"
+            },
+            {
+                "index": 110,
+                "name": "SoundLiberty 92",
+                "file": "TaoTronics SoundLiberty 92"
+            },
+            {
+                "index": 110,
+                "name": "SoundLiberty 94",
+                "file": "TaoTronics SoundLiberty 94"
+            }
+        ]
+    },
+    {
+        "name": "Tin HiFi",
+        "phones": [
+            {
+                "index": 112,
+                "name": "T2",
+                "file": "Tin HiFi T2"
+            },
+            {
+                "index": 112,
+                "name": "T3",
+                "file": "Tin HiFi T3"
+            }
+        ]
+    },
+    {
+        "name": "Tranya",
+        "phones": [
+            {
+                "index": 113,
+                "name": "T10",
+                "file": "Tranya T10"
+            }
+        ]
+    },
+    {
+        "name": "Turtle Beach",
+        "phones": [
+            {
+                "index": 114,
+                "name": "Battle Buds",
+                "file": "Turtle Beach Battle Buds"
+            }
+        ]
+    },
+    {
+        "name": "Ultimate Ears",
+        "phones": [
+            {
+                "index": 115,
+                "name": "FITS",
+                "file": "Ultimate Ears FITS"
+            }
+        ]
+    },
+    {
+        "name": "V-MODA",
+        "phones": [
+            {
+                "index": 116,
+                "name": "BassFit Wireless",
+                "file": "V-MODA BassFit Wireless"
+            }
+        ]
+    },
+    {
+        "name": "Venstone",
+        "phones": [
+            {
+                "index": 117,
+                "name": "X1",
+                "file": "Venstone X1"
+            }
+        ]
+    },
+    {
+        "name": "Westone",
+        "phones": [
+            {
+                "index": 118,
+                "name": "W40",
+                "file": "Westone W40"
+            }
+        ]
+    },
+    {
+        "name": "Wyze",
+        "phones": [
+            {
+                "index": 119,
+                "name": "Buds",
+                "file": "Wyze Buds"
+            },
+            {
+                "index": 119,
+                "name": "Buds Pro",
+                "file": "Wyze Buds Pro"
+            }
+        ]
+    },
+    {
+        "name": "XFYRO",
+        "phones": [
+            {
+                "index": 120,
+                "name": "xS2",
+                "file": "XFYRO xS2"
+            }
+        ]
+    },
+    {
+        "name": "Ylife",
+        "phones": [
+            {
+                "index": 122,
+                "name": "True Wireless Earbuds",
+                "file": "Ylife True Wireless Earbuds"
+            }
+        ]
+    }
+]
